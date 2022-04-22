@@ -51,6 +51,7 @@ Linux-aarch64 (using aarch64-linux-gnu-gcc 9.3.0)
 # file hello
 # qemu-aarch64 hello
 
+wget http://ftp.gnu.org/gnu/binutils/binutils-2.35.tar.gz
 tar -xvf binutils-2.35.tar.gz
 #the patch here doesn't update now
 patch -p0<data/binutils-2.35-mao.patch
