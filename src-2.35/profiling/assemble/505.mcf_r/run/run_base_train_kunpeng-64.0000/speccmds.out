@@ -1,0 +1,107 @@
+specinvoke r4356
+ Invoked as: /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specinvoke -d /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/run/run_base_train_kunpeng-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+timer ticks over every 1000 ns
+ Environment in effect for these runs:
+ # 1: LANG=en_US.UTF-8
+ # 2: SLURM_JOB_QOS=normal
+ # 3: XDG_SESSION_ID=120291
+ # 4: LIBC_FATAL_STDERR_=1
+ # 5: SSH_CONNECTION=172.17.69.254 55320 172.16.20.220 22
+ # 6: LC_LANG=C
+ # 7: QT_GRAPHICSSYSTEM_CHECKED=1
+ # 8: LOGNAME=nsccgz_yfdu_16
+ # 9: LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+ #10: SLURM_NNODES=1
+ #11: SLURM_SUBMIT_HOST=aln220
+ #12: XDG_RUNTIME_DIR=/run/user/7778
+ #13: SLURMD_NODENAME=apn508
+ #14: SLURM_TASKS_PER_NODE=128
+ #15: MODULESHOME=/usr/share/Modules
+ #16: SLURM_TASK_PID=16149
+ #17: HOME=/GPUFS/nsccgz_yfdu_16
+ #18: SSH_TTY=/dev/pts/3
+ #19: SLURM_NTASKS=128
+ #20: SLURM_TOPOLOGY_ADDR_PATTERN=node
+ #21: USER=nsccgz_yfdu_16
+ #22: SLURM_NPROCS=128
+ #23: LC_ALL=C
+ #24: HISTTIMEFORMAT=[%Y-%m-%d %H:%M:%S] [172.17.69.254] 
+ #25: http_proxy=http://172.16.20.3:3138
+ #26: MAIL=/var/spool/mail/nsccgz_yfdu_16
+ #27: OLD_PWD=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #28: SLURM_NODELIST=apn508
+ #29: HOSTNAME=apn508
+ #30: SLURM_JOB_NUM_NODES=1
+ #31: SLURM_WORKING_CLUSTER=tianhe2-t:aln220:6817:8704:102
+ #32: OMP_NUM_THREADS=1
+ #33: LD_LIBRARY_PATH=/usr/local/lib64/:/usr/local/lib/:/lib64::/GPUFS/nsccgz_yfdu_16/gta/jemalloc-5.2.1/lib
+ #34: SLURM_JOB_NAME=gta
+ #35: QTLIB=/usr/lib64/qt-3.3/lib
+ #36: SPECPERLLIB=/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/lib:/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin
+ #37: LANGUAGE=en_US
+ #38: LSCOLORS=gxfxcxdxbxegedabagacad
+ #39: ENVIRONMENT=BATCH
+ #40: LAST_CMD= 1010  [2021-01-10 09:56:19] [172.17.69.254] vim kunpeng.sh 
+ #41: SLURM_TOPOLOGY_ADDR=apn508
+ #42: SLURM_PRIO_PROCESS=0
+ #43: SHLVL=2
+ #44: SLURM_JOB_ACCOUNT=tianhe2t_test
+ #45: SPEC=/GPUFS/nsccgz_yfdu_16/gta/cpu2017
+ #46: SLURM_CLUSTER_NAME=tianhe2-t
+ #47: LOADEDMODULES=
+ #48: CLICOLOR=1
+ #49: SLURM_GTIDS=0
+ #50: TMPDIR=/tmp
+ #51: PROMPT_COMMAND=
+if [ -z "$OLD_PWD" ];then 
+    export OLD_PWD=$PWD; 
+fi; 
+if [ ! -z "$LAST_CMD" ] && [ "$(history 1)" != "$LAST_CMD" ]; then 
+    logger -t `whoami`_shell_cmd "[$OLD_PWD]$(history 1)"; 
+fi; 
+export LAST_CMD="$(history 1)"; 
+export OLD_PWD=$PWD;
+ #52: SLURM_JOB_UID=7778
+ #53: OMPI_ALLOW_RUN_AS_ROOT=1
+ #54: SLURM_PROCID=0
+ #55: SLURM_NODE_ALIASES=(null)
+ #56: QTDIR=/usr/lib64/qt-3.3
+ #57: SLURM_JOB_USER=nsccgz_yfdu_16
+ #58: PATH=/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/usr/share/Modules/bin:/usr/bin
+ #59: BASH_FUNC_module()=() {  eval `modulecmd bash $*`
+}
+ #60: HISTCONTROL=ignoredups
+ #61: LESSOPEN=||/usr/bin/lesspipe.sh %s
+ #62: SSH_CLIENT=172.17.69.254 55320 22
+ #63: MODULEPATH=/GPUFS/app_taishan/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/GPUFS/nsccgz_yfdu_16/fgn/sriov-test/modulefiles:/GPUFS/nsccgz_yfdu_16/fgn/modules
+ #64: OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+ #65: SLURM_JOB_PARTITION=arm
+ #66: ftp_proxy=ftp://172.16.20.3:3138
+ #67: SLURM_JOBID=4404
+ #68: PWD=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #69: SLURM_SUBMIT_DIR=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #70: HISTSIZE=1000
+ #71: SLURM_LOCALID=0
+ #72: XDG_DATA_DIRS=/GPUFS/nsccgz_yfdu_16/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+ #73: QTINC=/usr/lib64/qt-3.3/include
+ #74: SLURM_CPUS_ON_NODE=128
+ #75: SLURM_JOB_CPUS_PER_NODE=128
+ #76: https_proxy=https://172.16.20.3:3138
+ #77: SLURM_JOB_GID=7037
+ #78: TERM=xterm-256color
+ #79: SHELL=/bin/bash
+ #80: SPECDB_PWD=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #81: SLURM_JOB_NODELIST=apn508
+ #82: SLURM_JOB_ID=4404
+ #83: SLURM_NODEID=0
+ #84: OMP_THREAD_LIMIT=1
+running commands in speccmds.cmd 1 times
+runs started at		1610244065, 984855000, Sun Jan 10 10:01:05 2021
+run 1 started at	1610244065, 984920000, Sun Jan 10 10:01:05 2021
+child started: 0,	1610244065, 984930000, pid=18465, '../run_base_train_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child finished: 0,	1610244143, 067038000, sec=77, nsec=82108000, pid=18465, rc=0
+run 1 finished at:	1610244143, 067105000, Sun Jan 10 10:02:23 2021
+run 1 elapsed time:	        77, 082185000, 77.082185000
+runs finished at	1610244143, 067137000, Sun Jan 10 10:02:23 2021
+runs elapsed time:	        77, 082282000, 77.082282000
+specinvoke exit: rc=0

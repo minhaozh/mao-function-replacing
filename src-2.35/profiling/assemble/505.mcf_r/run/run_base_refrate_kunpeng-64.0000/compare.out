@@ -1,0 +1,617 @@
+specinvoke r4356
+ Invoked as: /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specinvoke -d /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/run/run_base_refrate_kunpeng-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+timer ticks over every 1000 ns
+ Environment in effect for these runs:
+ # 1: LC_ALL=C
+ # 2: SLURM_NPROCS=128
+ # 3: HISTTIMEFORMAT=[%Y-%m-%d %H:%M:%S] [172.17.69.254] 
+ # 4: SLURM_NTASKS=128
+ # 5: SLURM_TOPOLOGY_ADDR_PATTERN=node
+ # 6: USER=nsccgz_yfdu_16
+ # 7: SLURM_NODELIST=apn508
+ # 8: HOSTNAME=apn508
+ # 9: http_proxy=http://172.16.20.3:3138
+ #10: OLD_PWD=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #11: MAIL=/var/spool/mail/nsccgz_yfdu_16
+ #12: SLURM_WORKING_CLUSTER=tianhe2-t:aln220:6817:8704:102
+ #13: SLURM_JOB_NUM_NODES=1
+ #14: SPECPERLLIB=/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/lib:/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin
+ #15: LANGUAGE=en_US
+ #16: LSCOLORS=gxfxcxdxbxegedabagacad
+ #17: ENVIRONMENT=BATCH
+ #18: OMP_NUM_THREADS=1
+ #19: LD_LIBRARY_PATH=/usr/local/lib64/:/usr/local/lib/:/lib64::/GPUFS/nsccgz_yfdu_16/gta/jemalloc-5.2.1/lib
+ #20: SLURM_JOB_NAME=gta
+ #21: QTLIB=/usr/lib64/qt-3.3/lib
+ #22: XDG_SESSION_ID=120291
+ #23: SSH_CONNECTION=172.17.69.254 55320 172.16.20.220 22
+ #24: LIBC_FATAL_STDERR_=1
+ #25: SLURM_JOB_QOS=normal
+ #26: LANG=en_US.UTF-8
+ #27: QT_GRAPHICSSYSTEM_CHECKED=1
+ #28: LOGNAME=nsccgz_yfdu_16
+ #29: SLURM_NNODES=1
+ #30: LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+ #31: LC_LANG=C
+ #32: XDG_RUNTIME_DIR=/run/user/7778
+ #33: SLURMD_NODENAME=apn508
+ #34: SLURM_TASKS_PER_NODE=128
+ #35: MODULESHOME=/usr/share/Modules
+ #36: SLURM_SUBMIT_HOST=aln220
+ #37: SLURM_TASK_PID=16149
+ #38: SSH_TTY=/dev/pts/3
+ #39: HOME=/GPUFS/nsccgz_yfdu_16
+ #40: MODULEPATH=/GPUFS/app_taishan/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/GPUFS/nsccgz_yfdu_16/fgn/sriov-test/modulefiles:/GPUFS/nsccgz_yfdu_16/fgn/modules
+ #41: LESSOPEN=||/usr/bin/lesspipe.sh %s
+ #42: SSH_CLIENT=172.17.69.254 55320 22
+ #43: SLURM_JOB_USER=nsccgz_yfdu_16
+ #44: QTDIR=/usr/lib64/qt-3.3
+ #45: PATH=/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/usr/share/Modules/bin:/usr/bin
+ #46: BASH_FUNC_module()=() {  eval `modulecmd bash $*`
+}
+ #47: HISTCONTROL=ignoredups
+ #48: SLURM_JOBID=4404
+ #49: PWD=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #50: SLURM_SUBMIT_DIR=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #51: HISTSIZE=1000
+ #52: OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+ #53: ftp_proxy=ftp://172.16.20.3:3138
+ #54: SLURM_JOB_PARTITION=arm
+ #55: SLURM_JOB_CPUS_PER_NODE=128
+ #56: https_proxy=https://172.16.20.3:3138
+ #57: SLURM_LOCALID=0
+ #58: XDG_DATA_DIRS=/GPUFS/nsccgz_yfdu_16/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+ #59: QTINC=/usr/lib64/qt-3.3/include
+ #60: SLURM_CPUS_ON_NODE=128
+ #61: SHELL=/bin/bash
+ #62: SPECDB_PWD=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #63: SLURM_JOB_ID=4404
+ #64: SLURM_JOB_NODELIST=apn508
+ #65: SLURM_NODEID=0
+ #66: SLURM_JOB_GID=7037
+ #67: TERM=xterm-256color
+ #68: SHLVL=2
+ #69: SLURM_PRIO_PROCESS=0
+ #70: SLURM_JOB_ACCOUNT=tianhe2t_test
+ #71: SPEC=/GPUFS/nsccgz_yfdu_16/gta/cpu2017
+ #72: SLURM_CLUSTER_NAME=tianhe2-t
+ #73: SLURM_TOPOLOGY_ADDR=apn508
+ #74: LAST_CMD= 1010  [2021-01-10 09:56:19] [172.17.69.254] vim kunpeng.sh 
+ #75: SLURM_GTIDS=0
+ #76: LOADEDMODULES=
+ #77: CLICOLOR=1
+ #78: SLURM_JOB_UID=7778
+ #79: OMPI_ALLOW_RUN_AS_ROOT=1
+ #80: TMPDIR=/tmp
+ #81: PROMPT_COMMAND=
+if [ -z "$OLD_PWD" ];then 
+    export OLD_PWD=$PWD; 
+fi; 
+if [ ! -z "$LAST_CMD" ] && [ "$(history 1)" != "$LAST_CMD" ]; then 
+    logger -t `whoami`_shell_cmd "[$OLD_PWD]$(history 1)"; 
+fi; 
+export LAST_CMD="$(history 1)"; 
+export OLD_PWD=$PWD;
+ #82: SLURM_NODE_ALIASES=(null)
+ #83: SLURM_PROCID=0
+ #84: OMP_THREAD_LIMIT=1
+running commands in compare.cmd 1 times
+runs started at		1610260234, 676514000, Sun Jan 10 14:30:34 2021
+run 1 started at	1610260234, 676564000, Sun Jan 10 14:30:34 2021
+child started: 0,	1610260234, 676576000, pid=32532, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 1,	1610260234, 676692000, pid=32533, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 2,	1610260234, 676795000, pid=32534, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 3,	1610260234, 676907000, pid=32535, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 4,	1610260234, 677027000, pid=32536, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 5,	1610260234, 677146000, pid=32537, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 6,	1610260234, 677273000, pid=32538, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 7,	1610260234, 677402000, pid=32539, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 8,	1610260234, 677516000, pid=32540, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 9,	1610260234, 677649000, pid=32541, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 10,	1610260234, 677757000, pid=32542, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 11,	1610260234, 677902000, pid=32543, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 12,	1610260234, 678022000, pid=32544, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 13,	1610260234, 678146000, pid=32549, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 14,	1610260234, 678281000, pid=32551, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 15,	1610260234, 678422000, pid=32552, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 16,	1610260234, 678545000, pid=32555, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 17,	1610260234, 678711000, pid=32556, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 18,	1610260234, 678858000, pid=32558, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 19,	1610260234, 678995000, pid=32562, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 20,	1610260234, 679133000, pid=32563, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 21,	1610260234, 679273000, pid=32566, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 22,	1610260234, 679395000, pid=32567, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 23,	1610260234, 679528000, pid=32569, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 24,	1610260234, 679669000, pid=32571, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 25,	1610260234, 679811000, pid=32573, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 26,	1610260234, 679942000, pid=32574, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 27,	1610260234, 680083000, pid=32577, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 28,	1610260234, 680229000, pid=32578, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 29,	1610260234, 680367000, pid=32581, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 30,	1610260234, 680503000, pid=32582, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 31,	1610260234, 680650000, pid=32585, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 32,	1610260234, 680814000, pid=32587, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 33,	1610260234, 680946000, pid=32589, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 34,	1610260234, 681077000, pid=32592, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 35,	1610260234, 681220000, pid=32593, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 36,	1610260234, 681356000, pid=32594, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 37,	1610260234, 681491000, pid=32597, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 38,	1610260234, 681635000, pid=32599, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 39,	1610260234, 681785000, pid=32600, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 40,	1610260234, 681902000, pid=32601, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 41,	1610260234, 682028000, pid=32602, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 42,	1610260234, 682153000, pid=32603, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 43,	1610260234, 682279000, pid=32604, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 44,	1610260234, 682415000, pid=32607, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 45,	1610260234, 682560000, pid=32609, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 46,	1610260234, 682701000, pid=32613, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 47,	1610260234, 682838000, pid=32614, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 48,	1610260234, 682981000, pid=32616, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 49,	1610260234, 683121000, pid=32619, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 50,	1610260234, 683264000, pid=32620, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 51,	1610260234, 683410000, pid=32621, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 52,	1610260234, 683541000, pid=32623, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 53,	1610260234, 683704000, pid=32627, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 54,	1610260234, 683845000, pid=32629, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 55,	1610260234, 684017000, pid=32631, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 56,	1610260234, 684170000, pid=32632, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 57,	1610260234, 684305000, pid=32637, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 58,	1610260234, 684470000, pid=32639, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 59,	1610260234, 684632000, pid=32641, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 60,	1610260234, 684774000, pid=32642, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 61,	1610260234, 684901000, pid=32643, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 62,	1610260234, 685023000, pid=32647, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 63,	1610260234, 685859000, pid=32648, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 64,	1610260234, 686020000, pid=32650, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 65,	1610260234, 686172000, pid=32652, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 66,	1610260234, 686310000, pid=32653, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 67,	1610260234, 686458000, pid=32656, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 68,	1610260234, 686597000, pid=32658, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 69,	1610260234, 686737000, pid=32659, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 70,	1610260234, 686874000, pid=32660, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 71,	1610260234, 686994000, pid=32661, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 72,	1610260234, 687128000, pid=32662, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 73,	1610260234, 687288000, pid=32665, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 74,	1610260234, 687423000, pid=32666, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 75,	1610260234, 687559000, pid=32667, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 76,	1610260234, 687722000, pid=32669, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 77,	1610260234, 687854000, pid=32673, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 78,	1610260234, 688013000, pid=32674, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 79,	1610260234, 688163000, pid=32675, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 80,	1610260234, 688300000, pid=32678, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 81,	1610260234, 688449000, pid=32679, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 82,	1610260234, 688584000, pid=32680, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 83,	1610260234, 688718000, pid=32684, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 84,	1610260234, 688875000, pid=32686, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 85,	1610260234, 689017000, pid=32689, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 86,	1610260234, 689175000, pid=32692, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 87,	1610260234, 689336000, pid=32693, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 88,	1610260234, 689476000, pid=32695, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 89,	1610260234, 689616000, pid=32697, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 90,	1610260234, 689760000, pid=32700, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 91,	1610260234, 689920000, pid=32702, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 92,	1610260234, 690058000, pid=32704, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 93,	1610260234, 690223000, pid=32705, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 94,	1610260234, 690359000, pid=32707, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 95,	1610260234, 690483000, pid=32708, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 96,	1610260234, 690609000, pid=32709, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 97,	1610260234, 690741000, pid=32711, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 98,	1610260234, 690863000, pid=32712, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 99,	1610260234, 690985000, pid=32713, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 100,	1610260234, 691109000, pid=32715, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 101,	1610260234, 691235000, pid=32717, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 102,	1610260234, 691357000, pid=32719, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 103,	1610260234, 691507000, pid=32720, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 104,	1610260234, 691635000, pid=32721, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 105,	1610260234, 691753000, pid=32722, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 106,	1610260234, 691883000, pid=32724, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 107,	1610260234, 692002000, pid=32725, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 108,	1610260234, 692131000, pid=32727, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 109,	1610260234, 692247000, pid=32728, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 110,	1610260234, 692366000, pid=32729, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 111,	1610260234, 692489000, pid=32731, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 112,	1610260234, 692607000, pid=32733, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 113,	1610260234, 692754000, pid=32735, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 114,	1610260234, 692901000, pid=32736, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 115,	1610260234, 693045000, pid=32738, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 116,	1610260234, 693200000, pid=32740, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 117,	1610260234, 693359000, pid=32741, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 118,	1610260234, 693510000, pid=32743, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 119,	1610260234, 693677000, pid=32745, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 120,	1610260234, 693814000, pid=32747, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 121,	1610260234, 693973000, pid=32748, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 122,	1610260234, 694128000, pid=32749, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 123,	1610260234, 694263000, pid=32751, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 124,	1610260234, 694413000, pid=32752, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 125,	1610260234, 694564000, pid=32755, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 126,	1610260234, 694722000, pid=32757, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child started: 127,	1610260234, 694857000, pid=32760, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/inp.out inp.out > inp.out.cmp'
+child finished: 71,	1610260235, 499329000, sec=0, nsec=812335000, pid=32661, rc=0
+child started: 71,	1610260235, 499353000, pid=32788, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 3,	1610260235, 501203000, sec=0, nsec=824296000, pid=32535, rc=0
+child started: 3,	1610260235, 501219000, pid=32790, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 12,	1610260235, 501384000, sec=0, nsec=823362000, pid=32544, rc=0
+child started: 12,	1610260235, 501390000, pid=32791, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 22,	1610260235, 501522000, sec=0, nsec=822127000, pid=32567, rc=0
+child started: 22,	1610260235, 501528000, pid=32792, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 5,	1610260235, 501672000, sec=0, nsec=824526000, pid=32537, rc=0
+child started: 5,	1610260235, 501678000, pid=32793, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 50,	1610260235, 501825000, sec=0, nsec=818561000, pid=32620, rc=0
+child started: 50,	1610260235, 501831000, pid=32794, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 53,	1610260235, 502000000, sec=0, nsec=818296000, pid=32627, rc=0
+child started: 53,	1610260235, 502005000, pid=32795, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 25,	1610260235, 502145000, sec=0, nsec=822334000, pid=32573, rc=0
+child started: 25,	1610260235, 502150000, pid=32796, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 31,	1610260235, 502299000, sec=0, nsec=821649000, pid=32585, rc=0
+child started: 31,	1610260235, 502303000, pid=32797, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 32,	1610260235, 502476000, sec=0, nsec=821662000, pid=32587, rc=0
+child started: 32,	1610260235, 502481000, pid=32798, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 54,	1610260235, 502625000, sec=0, nsec=818780000, pid=32629, rc=0
+child started: 54,	1610260235, 502630000, pid=32800, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 20,	1610260235, 502811000, sec=0, nsec=823678000, pid=32563, rc=0
+child started: 20,	1610260235, 502815000, pid=32803, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 36,	1610260235, 502981000, sec=0, nsec=821625000, pid=32594, rc=0
+child started: 36,	1610260235, 502986000, pid=32805, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 44,	1610260235, 503134000, sec=0, nsec=820719000, pid=32607, rc=0
+child started: 44,	1610260235, 503139000, pid=32806, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 45,	1610260235, 503289000, sec=0, nsec=820729000, pid=32609, rc=0
+child started: 45,	1610260235, 503294000, pid=32807, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 0,	1610260235, 503458000, sec=0, nsec=826882000, pid=32532, rc=0
+child started: 0,	1610260235, 503463000, pid=32810, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 2,	1610260235, 503625000, sec=0, nsec=826830000, pid=32534, rc=0
+child started: 2,	1610260235, 503631000, pid=32811, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 10,	1610260235, 503799000, sec=0, nsec=826042000, pid=32542, rc=0
+child started: 10,	1610260235, 503804000, pid=32814, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 11,	1610260235, 503959000, sec=0, nsec=826057000, pid=32543, rc=0
+child started: 11,	1610260235, 503964000, pid=32816, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 14,	1610260235, 504130000, sec=0, nsec=825849000, pid=32551, rc=0
+child started: 14,	1610260235, 504134000, pid=32817, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 33,	1610260235, 504306000, sec=0, nsec=823360000, pid=32589, rc=0
+child started: 33,	1610260235, 504311000, pid=32819, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 41,	1610260235, 504484000, sec=0, nsec=822456000, pid=32602, rc=0
+child started: 41,	1610260235, 504489000, pid=32821, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 27,	1610260235, 504669000, sec=0, nsec=824586000, pid=32577, rc=0
+child started: 27,	1610260235, 504673000, pid=32822, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 55,	1610260235, 504841000, sec=0, nsec=820824000, pid=32631, rc=0
+child started: 55,	1610260235, 504847000, pid=32826, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 58,	1610260235, 505071000, sec=0, nsec=820601000, pid=32639, rc=0
+child started: 58,	1610260235, 505078000, pid=32828, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 59,	1610260235, 505251000, sec=0, nsec=820619000, pid=32641, rc=0
+child started: 59,	1610260235, 505256000, pid=32830, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 62,	1610260235, 505433000, sec=0, nsec=820410000, pid=32647, rc=0
+child started: 62,	1610260235, 505439000, pid=32832, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 65,	1610260235, 505611000, sec=0, nsec=819439000, pid=32652, rc=0
+child started: 65,	1610260235, 505617000, pid=32834, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 66,	1610260235, 505800000, sec=0, nsec=819490000, pid=32653, rc=0
+child started: 66,	1610260235, 505805000, pid=32836, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 69,	1610260235, 505962000, sec=0, nsec=819225000, pid=32659, rc=0
+child started: 69,	1610260235, 505967000, pid=32839, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 70,	1610260235, 506147000, sec=0, nsec=819273000, pid=32660, rc=0
+child started: 70,	1610260235, 506152000, pid=32840, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 73,	1610260235, 506313000, sec=0, nsec=819025000, pid=32665, rc=0
+child started: 73,	1610260235, 506319000, pid=32842, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 72,	1610260235, 506483000, sec=0, nsec=819355000, pid=32662, rc=0
+child started: 72,	1610260235, 506488000, pid=32844, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 77,	1610260235, 506633000, sec=0, nsec=818779000, pid=32673, rc=0
+child started: 77,	1610260235, 506638000, pid=32845, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 83,	1610260235, 506793000, sec=0, nsec=818075000, pid=32684, rc=0
+child started: 83,	1610260235, 506798000, pid=32846, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 84,	1610260235, 506968000, sec=0, nsec=818093000, pid=32686, rc=0
+child started: 84,	1610260235, 506973000, pid=32848, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 6,	1610260235, 507136000, sec=0, nsec=829863000, pid=32538, rc=0
+child started: 6,	1610260235, 507141000, pid=32849, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 49,	1610260235, 507322000, sec=0, nsec=824201000, pid=32619, rc=0
+child started: 49,	1610260235, 507328000, pid=32851, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 86,	1610260235, 507508000, sec=0, nsec=818333000, pid=32692, rc=0
+child started: 86,	1610260235, 507513000, pid=32854, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 79,	1610260235, 507673000, sec=0, nsec=819510000, pid=32675, rc=0
+child started: 79,	1610260235, 507678000, pid=32856, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 87,	1610260235, 507838000, sec=0, nsec=818502000, pid=32693, rc=0
+child started: 87,	1610260235, 507844000, pid=32858, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 90,	1610260235, 507996000, sec=0, nsec=818236000, pid=32700, rc=0
+child started: 90,	1610260235, 508001000, pid=32860, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 19,	1610260235, 508160000, sec=0, nsec=829165000, pid=32562, rc=0
+child started: 19,	1610260235, 508165000, pid=32862, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 51,	1610260235, 508333000, sec=0, nsec=824923000, pid=32621, rc=0
+child started: 51,	1610260235, 508338000, pid=32864, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 92,	1610260235, 508500000, sec=0, nsec=818442000, pid=32704, rc=0
+child started: 92,	1610260235, 508506000, pid=32867, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 93,	1610260235, 508676000, sec=0, nsec=818453000, pid=32705, rc=0
+child started: 93,	1610260235, 508682000, pid=32869, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 94,	1610260235, 508837000, sec=0, nsec=818478000, pid=32707, rc=0
+child started: 94,	1610260235, 508842000, pid=32870, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 16,	1610260235, 508987000, sec=0, nsec=830442000, pid=32555, rc=0
+child started: 16,	1610260235, 508992000, pid=32871, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 95,	1610260235, 509161000, sec=0, nsec=818678000, pid=32708, rc=0
+child started: 95,	1610260235, 509166000, pid=32872, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 15,	1610260235, 509351000, sec=0, nsec=830929000, pid=32552, rc=0
+child started: 15,	1610260235, 509355000, pid=32876, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 97,	1610260235, 509534000, sec=0, nsec=818793000, pid=32711, rc=0
+child started: 97,	1610260235, 509540000, pid=32877, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 98,	1610260235, 509717000, sec=0, nsec=818854000, pid=32712, rc=0
+child started: 98,	1610260235, 509722000, pid=32878, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 99,	1610260235, 509904000, sec=0, nsec=818919000, pid=32713, rc=0
+child started: 99,	1610260235, 509911000, pid=32881, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 75,	1610260235, 510065000, sec=0, nsec=822506000, pid=32667, rc=0
+child started: 75,	1610260235, 510070000, pid=32883, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 40,	1610260235, 510237000, sec=0, nsec=828335000, pid=32601, rc=0
+child started: 40,	1610260235, 510243000, pid=32884, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 37,	1610260235, 510414000, sec=0, nsec=828923000, pid=32597, rc=0
+child started: 37,	1610260235, 510419000, pid=32885, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 38,	1610260235, 510591000, sec=0, nsec=828956000, pid=32599, rc=0
+child started: 38,	1610260235, 510596000, pid=32887, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 46,	1610260235, 510760000, sec=0, nsec=828059000, pid=32613, rc=0
+child started: 46,	1610260235, 510765000, pid=32888, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 56,	1610260235, 510935000, sec=0, nsec=826765000, pid=32632, rc=0
+child started: 56,	1610260235, 510941000, pid=32889, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 8,	1610260235, 511101000, sec=0, nsec=833585000, pid=32540, rc=0
+child started: 8,	1610260235, 511106000, pid=32892, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 80,	1610260235, 511282000, sec=0, nsec=822982000, pid=32678, rc=0
+child started: 80,	1610260235, 511287000, pid=32893, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 91,	1610260235, 511445000, sec=0, nsec=821525000, pid=32702, rc=0
+child started: 91,	1610260235, 511450000, pid=32895, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 35,	1610260235, 511625000, sec=0, nsec=830405000, pid=32593, rc=0
+child started: 35,	1610260235, 511630000, pid=32899, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 78,	1610260235, 511806000, sec=0, nsec=823793000, pid=32674, rc=0
+child started: 78,	1610260235, 511812000, pid=32900, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 100,	1610260235, 511963000, sec=0, nsec=820854000, pid=32715, rc=0
+child started: 100,	1610260235, 511969000, pid=32904, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 101,	1610260235, 512124000, sec=0, nsec=820889000, pid=32717, rc=0
+child started: 101,	1610260235, 512130000, pid=32906, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 102,	1610260235, 512294000, sec=0, nsec=820937000, pid=32719, rc=0
+child started: 102,	1610260235, 512299000, pid=32909, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 57,	1610260235, 512462000, sec=0, nsec=828157000, pid=32637, rc=0
+child started: 57,	1610260235, 512467000, pid=32910, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 103,	1610260235, 512608000, sec=0, nsec=821101000, pid=32720, rc=0
+child started: 103,	1610260235, 512614000, pid=32911, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 105,	1610260235, 512770000, sec=0, nsec=821017000, pid=32722, rc=0
+child started: 105,	1610260235, 512777000, pid=32912, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 106,	1610260235, 513059000, sec=0, nsec=821176000, pid=32724, rc=0
+child started: 106,	1610260235, 513066000, pid=32914, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 107,	1610260235, 513236000, sec=0, nsec=821234000, pid=32725, rc=0
+child started: 107,	1610260235, 513242000, pid=32915, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 108,	1610260235, 513407000, sec=0, nsec=821276000, pid=32727, rc=0
+child started: 108,	1610260235, 513412000, pid=32916, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 110,	1610260235, 513589000, sec=0, nsec=821223000, pid=32729, rc=0
+child started: 110,	1610260235, 513594000, pid=32917, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 111,	1610260235, 513747000, sec=0, nsec=821258000, pid=32731, rc=0
+child started: 111,	1610260235, 513752000, pid=32918, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 112,	1610260235, 513905000, sec=0, nsec=821298000, pid=32733, rc=0
+child started: 112,	1610260235, 513910000, pid=32919, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 116,	1610260235, 514091000, sec=0, nsec=820891000, pid=32740, rc=0
+child started: 116,	1610260235, 514097000, pid=32921, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 29,	1610260235, 514278000, sec=0, nsec=833911000, pid=32581, rc=0
+child started: 29,	1610260235, 514283000, pid=32923, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 34,	1610260235, 514455000, sec=0, nsec=833378000, pid=32592, rc=0
+child started: 34,	1610260235, 514460000, pid=32926, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 61,	1610260235, 514650000, sec=0, nsec=829749000, pid=32643, rc=0
+child started: 61,	1610260235, 514656000, pid=32927, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 48,	1610260235, 514847000, sec=0, nsec=831866000, pid=32616, rc=0
+child started: 48,	1610260235, 514852000, pid=32928, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 30,	1610260235, 515073000, sec=0, nsec=834570000, pid=32582, rc=0
+child started: 30,	1610260235, 515080000, pid=32930, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 7,	1610260235, 515253000, sec=0, nsec=837851000, pid=32539, rc=0
+child started: 7,	1610260235, 515259000, pid=32933, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 28,	1610260235, 515429000, sec=0, nsec=835200000, pid=32578, rc=0
+child started: 28,	1610260235, 515434000, pid=32935, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 43,	1610260235, 515596000, sec=0, nsec=833317000, pid=32604, rc=0
+child started: 43,	1610260235, 515602000, pid=32936, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 26,	1610260235, 515768000, sec=0, nsec=835826000, pid=32574, rc=0
+child started: 26,	1610260235, 515773000, pid=32938, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 52,	1610260235, 515944000, sec=0, nsec=832403000, pid=32623, rc=0
+child started: 52,	1610260235, 515948000, pid=32940, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 74,	1610260235, 516154000, sec=0, nsec=828731000, pid=32666, rc=0
+child started: 74,	1610260235, 516159000, pid=32944, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 85,	1610260235, 516402000, sec=0, nsec=827385000, pid=32689, rc=0
+child started: 85,	1610260235, 516407000, pid=32946, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 81,	1610260235, 516610000, sec=0, nsec=828161000, pid=32679, rc=0
+child started: 81,	1610260235, 516617000, pid=32948, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 88,	1610260235, 516777000, sec=0, nsec=827301000, pid=32695, rc=0
+child started: 88,	1610260235, 516783000, pid=32950, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 89,	1610260235, 516952000, sec=0, nsec=827336000, pid=32697, rc=0
+child started: 89,	1610260235, 516957000, pid=32951, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 96,	1610260235, 517106000, sec=0, nsec=826497000, pid=32709, rc=0
+child started: 96,	1610260235, 517111000, pid=32952, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 113,	1610260235, 517265000, sec=0, nsec=824511000, pid=32735, rc=0
+child started: 113,	1610260235, 517271000, pid=32954, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 117,	1610260235, 517413000, sec=0, nsec=824054000, pid=32741, rc=0
+child started: 117,	1610260235, 517419000, pid=32955, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 47,	1610260235, 517554000, sec=0, nsec=834716000, pid=32614, rc=0
+child started: 47,	1610260235, 517560000, pid=32957, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 68,	1610260235, 517711000, sec=0, nsec=831114000, pid=32658, rc=0
+child started: 68,	1610260235, 517717000, pid=32960, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 118,	1610260235, 517863000, sec=0, nsec=824353000, pid=32743, rc=0
+child started: 118,	1610260235, 517869000, pid=32962, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 60,	1610260235, 518019000, sec=0, nsec=833245000, pid=32642, rc=0
+child started: 60,	1610260235, 518024000, pid=32964, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 120,	1610260235, 518161000, sec=0, nsec=824347000, pid=32747, rc=0
+child started: 120,	1610260235, 518166000, pid=32965, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 64,	1610260235, 518327000, sec=0, nsec=832307000, pid=32650, rc=0
+child started: 64,	1610260235, 518333000, pid=32967, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 23,	1610260235, 518492000, sec=0, nsec=838964000, pid=32569, rc=0
+child started: 23,	1610260235, 518497000, pid=32968, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 121,	1610260235, 518635000, sec=0, nsec=824662000, pid=32748, rc=0
+child started: 121,	1610260235, 518640000, pid=32969, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 122,	1610260235, 518782000, sec=0, nsec=824654000, pid=32749, rc=0
+child started: 122,	1610260235, 518788000, pid=32971, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 123,	1610260235, 518948000, sec=0, nsec=824685000, pid=32751, rc=0
+child started: 123,	1610260235, 518954000, pid=32972, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 124,	1610260235, 519114000, sec=0, nsec=824701000, pid=32752, rc=0
+child started: 124,	1610260235, 519118000, pid=32973, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 125,	1610260235, 519277000, sec=0, nsec=824713000, pid=32755, rc=0
+child started: 125,	1610260235, 519283000, pid=32974, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 18,	1610260235, 519432000, sec=0, nsec=840574000, pid=32558, rc=0
+child started: 18,	1610260235, 519437000, pid=32976, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 24,	1610260235, 519585000, sec=0, nsec=839916000, pid=32571, rc=0
+child started: 24,	1610260235, 519590000, pid=32977, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 126,	1610260235, 519749000, sec=0, nsec=825027000, pid=32757, rc=0
+child started: 126,	1610260235, 519754000, pid=32978, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 63,	1610260235, 520101000, sec=0, nsec=834242000, pid=32648, rc=0
+child started: 63,	1610260235, 520112000, pid=32979, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 67,	1610260235, 520286000, sec=0, nsec=833828000, pid=32656, rc=0
+child started: 67,	1610260235, 520292000, pid=32983, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 76,	1610260235, 520443000, sec=0, nsec=832721000, pid=32669, rc=0
+child started: 76,	1610260235, 520448000, pid=32984, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 82,	1610260235, 520601000, sec=0, nsec=832017000, pid=32680, rc=0
+child started: 82,	1610260235, 520606000, pid=32986, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 114,	1610260235, 520755000, sec=0, nsec=827854000, pid=32736, rc=0
+child started: 114,	1610260235, 520761000, pid=32988, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 119,	1610260235, 522074000, sec=0, nsec=828397000, pid=32745, rc=0
+child started: 119,	1610260235, 522097000, pid=32995, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 42,	1610260235, 522276000, sec=0, nsec=840123000, pid=32603, rc=0
+child started: 42,	1610260235, 522283000, pid=32997, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 9,	1610260235, 522540000, sec=0, nsec=844891000, pid=32541, rc=0
+child started: 9,	1610260235, 522548000, pid=32999, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 4,	1610260235, 522951000, sec=0, nsec=845924000, pid=32536, rc=0
+child started: 4,	1610260235, 522972000, pid=33003, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 21,	1610260235, 523162000, sec=0, nsec=843889000, pid=32566, rc=0
+child started: 21,	1610260235, 523170000, pid=33005, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 1,	1610260235, 523762000, sec=0, nsec=847070000, pid=32533, rc=0
+child started: 1,	1610260235, 523783000, pid=33010, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 39,	1610260235, 523974000, sec=0, nsec=842189000, pid=32600, rc=0
+child started: 39,	1610260235, 523980000, pid=33012, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 17,	1610260235, 524299000, sec=0, nsec=845588000, pid=32556, rc=0
+child started: 17,	1610260235, 524306000, pid=33015, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 109,	1610260235, 524736000, sec=0, nsec=832489000, pid=32728, rc=0
+child started: 109,	1610260235, 524745000, pid=33021, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 13,	1610260235, 525341000, sec=0, nsec=847195000, pid=32549, rc=0
+child started: 13,	1610260235, 525350000, pid=33029, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 127,	1610260235, 525942000, sec=0, nsec=831085000, pid=32760, rc=0
+child started: 127,	1610260235, 525965000, pid=33032, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 104,	1610260235, 528150000, sec=0, nsec=836515000, pid=32721, rc=0
+child started: 104,	1610260235, 528168000, pid=33037, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 115,	1610260235, 540297000, sec=0, nsec=847252000, pid=32738, rc=0
+child started: 115,	1610260235, 540318000, pid=33042, '/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specperl /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/harness/specdiff -m -l 10 /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/data/refrate/output/mcf.out mcf.out > mcf.out.cmp'
+child finished: 12,	1610260236, 071690000, sec=0, nsec=570300000, pid=32791, rc=0
+child finished: 2,	1610260236, 072368000, sec=0, nsec=568737000, pid=32811, rc=0
+child finished: 44,	1610260236, 075814000, sec=0, nsec=572675000, pid=32806, rc=0
+child finished: 22,	1610260236, 084120000, sec=0, nsec=582592000, pid=32792, rc=0
+child finished: 45,	1610260236, 086954000, sec=0, nsec=583660000, pid=32807, rc=0
+child finished: 20,	1610260236, 091725000, sec=0, nsec=588910000, pid=32803, rc=0
+child finished: 71,	1610260236, 095940000, sec=0, nsec=596587000, pid=32788, rc=0
+child finished: 53,	1610260236, 098057000, sec=0, nsec=596052000, pid=32795, rc=0
+child finished: 89,	1610260236, 098441000, sec=0, nsec=581484000, pid=32951, rc=0
+child finished: 19,	1610260236, 099607000, sec=0, nsec=591442000, pid=32862, rc=0
+child finished: 55,	1610260236, 101393000, sec=0, nsec=596546000, pid=32826, rc=0
+child finished: 37,	1610260236, 102199000, sec=0, nsec=591780000, pid=32885, rc=0
+child finished: 33,	1610260236, 104816000, sec=0, nsec=600505000, pid=32819, rc=0
+child finished: 5,	1610260236, 106864000, sec=0, nsec=605186000, pid=32793, rc=0
+child finished: 83,	1610260236, 109653000, sec=0, nsec=602855000, pid=32846, rc=0
+child finished: 94,	1610260236, 109881000, sec=0, nsec=601039000, pid=32870, rc=0
+child finished: 32,	1610260236, 112693000, sec=0, nsec=610212000, pid=32798, rc=0
+child finished: 72,	1610260236, 113165000, sec=0, nsec=606677000, pid=32844, rc=0
+child finished: 3,	1610260236, 113209000, sec=0, nsec=611990000, pid=32790, rc=0
+child finished: 10,	1610260236, 117047000, sec=0, nsec=613243000, pid=32814, rc=0
+child finished: 36,	1610260236, 117680000, sec=0, nsec=614694000, pid=32805, rc=0
+child finished: 87,	1610260236, 118261000, sec=0, nsec=610417000, pid=32858, rc=0
+child finished: 31,	1610260236, 121837000, sec=0, nsec=619534000, pid=32797, rc=0
+child finished: 121,	1610260236, 122435000, sec=0, nsec=603795000, pid=32969, rc=0
+child finished: 82,	1610260236, 123032000, sec=0, nsec=602426000, pid=32986, rc=0
+child finished: 54,	1610260236, 123830000, sec=0, nsec=621200000, pid=32800, rc=0
+child finished: 65,	1610260236, 124327000, sec=0, nsec=618710000, pid=32834, rc=0
+child finished: 67,	1610260236, 124338000, sec=0, nsec=604046000, pid=32983, rc=0
+child finished: 52,	1610260236, 124804000, sec=0, nsec=608856000, pid=32940, rc=0
+child finished: 25,	1610260236, 128710000, sec=0, nsec=626560000, pid=32796, rc=0
+child finished: 113,	1610260236, 129944000, sec=0, nsec=612673000, pid=32954, rc=0
+child finished: 110,	1610260236, 130567000, sec=0, nsec=616973000, pid=32917, rc=0
+child finished: 79,	1610260236, 133327000, sec=0, nsec=625649000, pid=32856, rc=0
+child finished: 70,	1610260236, 134565000, sec=0, nsec=628413000, pid=32840, rc=0
+child finished: 0,	1610260236, 134665000, sec=0, nsec=631202000, pid=32810, rc=0
+child finished: 41,	1610260236, 135657000, sec=0, nsec=631168000, pid=32821, rc=0
+child finished: 51,	1610260236, 135674000, sec=0, nsec=627336000, pid=32864, rc=0
+child finished: 57,	1610260236, 135803000, sec=0, nsec=623336000, pid=32910, rc=0
+child finished: 64,	1610260236, 136918000, sec=0, nsec=618585000, pid=32967, rc=0
+child finished: 77,	1610260236, 137430000, sec=0, nsec=630792000, pid=32845, rc=0
+child finished: 122,	1610260236, 137569000, sec=0, nsec=618781000, pid=32971, rc=0
+child finished: 11,	1610260236, 137918000, sec=0, nsec=633954000, pid=32816, rc=0
+child finished: 117,	1610260236, 138454000, sec=0, nsec=621035000, pid=32955, rc=0
+child finished: 69,	1610260236, 138817000, sec=0, nsec=632850000, pid=32839, rc=0
+child finished: 96,	1610260236, 139109000, sec=0, nsec=621998000, pid=32952, rc=0
+child finished: 58,	1610260236, 139677000, sec=0, nsec=634599000, pid=32828, rc=0
+child finished: 102,	1610260236, 140999000, sec=0, nsec=628700000, pid=32909, rc=0
+child finished: 119,	1610260236, 142575000, sec=0, nsec=620478000, pid=32995, rc=0
+child finished: 76,	1610260236, 142930000, sec=0, nsec=622482000, pid=32984, rc=0
+child finished: 35,	1610260236, 143635000, sec=0, nsec=632005000, pid=32899, rc=0
+child finished: 8,	1610260236, 144163000, sec=0, nsec=633057000, pid=32892, rc=0
+child finished: 118,	1610260236, 144772000, sec=0, nsec=626903000, pid=32962, rc=0
+child finished: 49,	1610260236, 144915000, sec=0, nsec=637587000, pid=32851, rc=0
+child finished: 120,	1610260236, 144930000, sec=0, nsec=626764000, pid=32965, rc=0
+child finished: 43,	1610260236, 146024000, sec=0, nsec=630422000, pid=32936, rc=0
+child finished: 13,	1610260236, 146046000, sec=0, nsec=620696000, pid=33029, rc=0
+child finished: 95,	1610260236, 147512000, sec=0, nsec=638346000, pid=32872, rc=0
+child finished: 106,	1610260236, 147852000, sec=0, nsec=634786000, pid=32914, rc=0
+child finished: 101,	1610260236, 148293000, sec=0, nsec=636163000, pid=32906, rc=0
+child finished: 61,	1610260236, 148607000, sec=0, nsec=633951000, pid=32927, rc=0
+child finished: 30,	1610260236, 149040000, sec=0, nsec=633960000, pid=32930, rc=0
+child finished: 50,	1610260236, 149800000, sec=0, nsec=647969000, pid=32794, rc=0
+child finished: 18,	1610260236, 149825000, sec=0, nsec=630388000, pid=32976, rc=0
+child finished: 62,	1610260236, 149856000, sec=0, nsec=644417000, pid=32832, rc=0
+child finished: 111,	1610260236, 150213000, sec=0, nsec=636461000, pid=32918, rc=0
+child finished: 15,	1610260236, 151167000, sec=0, nsec=641812000, pid=32876, rc=0
+child finished: 126,	1610260236, 151284000, sec=0, nsec=631530000, pid=32978, rc=0
+child finished: 90,	1610260236, 151496000, sec=0, nsec=643495000, pid=32860, rc=0
+child finished: 28,	1610260236, 151660000, sec=0, nsec=636226000, pid=32935, rc=0
+child finished: 29,	1610260236, 151704000, sec=0, nsec=637421000, pid=32923, rc=0
+child finished: 59,	1610260236, 152077000, sec=0, nsec=646821000, pid=32830, rc=0
+child finished: 56,	1610260236, 152088000, sec=0, nsec=641147000, pid=32889, rc=0
+child finished: 86,	1610260236, 152145000, sec=0, nsec=644632000, pid=32854, rc=0
+child finished: 38,	1610260236, 152156000, sec=0, nsec=641560000, pid=32887, rc=0
+child finished: 116,	1610260236, 152508000, sec=0, nsec=638411000, pid=32921, rc=0
+child finished: 60,	1610260236, 153036000, sec=0, nsec=635012000, pid=32964, rc=0
+child finished: 63,	1610260236, 153468000, sec=0, nsec=633356000, pid=32979, rc=0
+child finished: 107,	1610260236, 153610000, sec=0, nsec=640368000, pid=32915, rc=0
+child finished: 40,	1610260236, 153667000, sec=0, nsec=643424000, pid=32884, rc=0
+child finished: 73,	1610260236, 154012000, sec=0, nsec=647693000, pid=32842, rc=0
+child finished: 27,	1610260236, 154134000, sec=0, nsec=649461000, pid=32822, rc=0
+child finished: 97,	1610260236, 154934000, sec=0, nsec=645394000, pid=32877, rc=0
+child finished: 66,	1610260236, 155736000, sec=0, nsec=649931000, pid=32836, rc=0
+child finished: 78,	1610260236, 155966000, sec=0, nsec=644154000, pid=32900, rc=0
+child finished: 17,	1610260236, 155995000, sec=0, nsec=631689000, pid=33015, rc=0
+child finished: 114,	1610260236, 156458000, sec=0, nsec=635697000, pid=32988, rc=0
+child finished: 16,	1610260236, 156607000, sec=0, nsec=647615000, pid=32871, rc=0
+child finished: 42,	1610260236, 157229000, sec=0, nsec=634946000, pid=32997, rc=0
+child finished: 6,	1610260236, 158680000, sec=0, nsec=651539000, pid=32849, rc=0
+child finished: 84,	1610260236, 159728000, sec=0, nsec=652755000, pid=32848, rc=0
+child finished: 68,	1610260236, 160835000, sec=0, nsec=643118000, pid=32960, rc=0
+child finished: 104,	1610260236, 160878000, sec=0, nsec=632710000, pid=33037, rc=0
+child finished: 81,	1610260236, 161178000, sec=0, nsec=644561000, pid=32948, rc=0
+child finished: 125,	1610260236, 161967000, sec=0, nsec=642684000, pid=32974, rc=0
+child finished: 105,	1610260236, 162164000, sec=0, nsec=649387000, pid=32912, rc=0
+child finished: 108,	1610260236, 162510000, sec=0, nsec=649098000, pid=32916, rc=0
+child finished: 7,	1610260236, 162580000, sec=0, nsec=647321000, pid=32933, rc=0
+child finished: 109,	1610260236, 162994000, sec=0, nsec=638249000, pid=33021, rc=0
+child finished: 4,	1610260236, 163042000, sec=0, nsec=640070000, pid=33003, rc=0
+child finished: 14,	1610260236, 163487000, sec=0, nsec=659353000, pid=32817, rc=0
+child finished: 98,	1610260236, 163494000, sec=0, nsec=653772000, pid=32878, rc=0
+child finished: 103,	1610260236, 163514000, sec=0, nsec=650900000, pid=32911, rc=0
+child finished: 92,	1610260236, 163631000, sec=0, nsec=655125000, pid=32867, rc=0
+child finished: 123,	1610260236, 163742000, sec=0, nsec=644788000, pid=32972, rc=0
+child finished: 127,	1610260236, 164221000, sec=0, nsec=638256000, pid=33032, rc=0
+child finished: 85,	1610260236, 164277000, sec=0, nsec=647870000, pid=32946, rc=0
+child finished: 9,	1610260236, 164403000, sec=0, nsec=641855000, pid=32999, rc=0
+child finished: 80,	1610260236, 164568000, sec=0, nsec=653281000, pid=32893, rc=0
+child finished: 115,	1610260236, 165610000, sec=0, nsec=625292000, pid=33042, rc=0
+child finished: 26,	1610260236, 167374000, sec=0, nsec=651601000, pid=32938, rc=0
+child finished: 93,	1610260236, 167643000, sec=0, nsec=658961000, pid=32869, rc=0
+child finished: 24,	1610260236, 167670000, sec=0, nsec=648080000, pid=32977, rc=0
+child finished: 124,	1610260236, 167824000, sec=0, nsec=648706000, pid=32973, rc=0
+child finished: 99,	1610260236, 167990000, sec=0, nsec=658079000, pid=32881, rc=0
+child finished: 88,	1610260236, 168663000, sec=0, nsec=651880000, pid=32950, rc=0
+child finished: 48,	1610260236, 169053000, sec=0, nsec=654201000, pid=32928, rc=0
+child finished: 112,	1610260236, 169486000, sec=0, nsec=655576000, pid=32919, rc=0
+child finished: 23,	1610260236, 169995000, sec=0, nsec=651498000, pid=32968, rc=0
+child finished: 100,	1610260236, 170725000, sec=0, nsec=658756000, pid=32904, rc=0
+child finished: 47,	1610260236, 172047000, sec=0, nsec=654487000, pid=32957, rc=0
+child finished: 39,	1610260236, 174021000, sec=0, nsec=650041000, pid=33012, rc=0
+child finished: 91,	1610260236, 174314000, sec=0, nsec=662864000, pid=32895, rc=0
+child finished: 74,	1610260236, 178952000, sec=0, nsec=662793000, pid=32944, rc=0
+child finished: 1,	1610260236, 179263000, sec=0, nsec=655480000, pid=33010, rc=0
+child finished: 21,	1610260236, 179623000, sec=0, nsec=656453000, pid=33005, rc=0
+child finished: 34,	1610260236, 180385000, sec=0, nsec=665925000, pid=32926, rc=0
+child finished: 46,	1610260236, 189052000, sec=0, nsec=678287000, pid=32888, rc=0
+child finished: 75,	1610260236, 194999000, sec=0, nsec=684929000, pid=32883, rc=0
+run 1 finished at:	1610260236, 195002000, Sun Jan 10 14:30:36 2021
+run 1 elapsed time:	         1, 518438000, 1.518438000
+runs finished at	1610260236, 195030000, Sun Jan 10 14:30:36 2021
+runs elapsed time:	         1, 518516000, 1.518516000
+specinvoke exit: rc=0

@@ -1,0 +1,288 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 22K of event 'cpu-cycles'
+# Event count (approx.): 14471410162
+#
+# Children,    Self,     Samples,Command    ,Shared Object    ,Symbol                                  
+ 97.89% , 0.00%  , 0          ,a.clang.out,[unknown]        ,[.] 0x0000ffffd91df09a
+20309 0xffffd91df09a,_start,__libc_start_main,LBM_performStreamCollideTRT
+396 0xffffd91df09a,_start,__libc_start_main,main,MAIN_finalize,LBM_showGridStatistics
+393 0xffffd91df09a,_start,__libc_start_main,main,MAIN_initialize,LBM_showGridStatistics
+247 0xffffd91df09a,_start,__libc_start_main,main,LBM_initializeGrid
+224 0xffffd91df09a,_start,__libc_start_main,main,MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 97.89% , 0.00%  , 0          ,a.clang.out,a.clang.out      ,[.] _start
+20309 _start,__libc_start_main,LBM_performStreamCollideTRT
+396 _start,__libc_start_main,main,MAIN_finalize,LBM_showGridStatistics
+393 _start,__libc_start_main,main,MAIN_initialize,LBM_showGridStatistics
+247 _start,__libc_start_main,main,LBM_initializeGrid
+224 _start,__libc_start_main,main,MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 97.89% , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] __libc_start_main
+20309 __libc_start_main,LBM_performStreamCollideTRT
+396 __libc_start_main,main,MAIN_finalize,LBM_showGridStatistics
+393 __libc_start_main,main,MAIN_initialize,LBM_showGridStatistics
+247 __libc_start_main,main,LBM_initializeGrid
+224 __libc_start_main,main,MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 91.14% , 91.07% , 20309      ,a.clang.out,a.clang.out      ,[.] LBM_performStreamCollideTRT
+20309 0xffffd91df09a,_start,__libc_start_main,LBM_performStreamCollideTRT
+ 6.75%  , 0.00%  , 0          ,a.clang.out,a.clang.out      ,[.] main
+396 main,MAIN_finalize,LBM_showGridStatistics
+393 main,MAIN_initialize,LBM_showGridStatistics
+247 main,LBM_initializeGrid
+224 main,MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 3.54%  , 3.54%  , 789        ,a.clang.out,a.clang.out      ,[.] LBM_showGridStatistics
+396 0xffffd91df09a,_start,__libc_start_main,main,MAIN_finalize,LBM_showGridStatistics
+393 0xffffd91df09a,_start,__libc_start_main,main,MAIN_initialize,LBM_showGridStatistics
+ 3.18%  , 0.00%  , 0          ,a.clang.out,a.clang.out      ,[.] MAIN_initialize
+393 MAIN_initialize,LBM_showGridStatistics
+224 MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 2.11%  , 2.11%  , 470        ,a.clang.out,a.clang.out      ,[.] LBM_handleInOutFlow
+470 LBM_handleInOutFlow
+ 1.83%  , 0.00%  , 0          ,a.clang.out,a.clang.out      ,[.] MAIN_finalize
+396 MAIN_finalize,LBM_showGridStatistics
+ 1.49%  , 1.16%  , 247        ,a.clang.out,a.clang.out      ,[.] LBM_initializeGrid
+247 0xffffd91df09a,_start,__libc_start_main,main,LBM_initializeGrid
+ 1.41%  , 0.35%  , 73         ,a.clang.out,a.clang.out      ,[.] LBM_loadObstacleFile
+224 LBM_loadObstacleFile,_IO_getc
+ 1.07%  , 1.06%  , 224        ,a.clang.out,libc-2.17.so     ,[.] _IO_getc
+224 0xffffd91df09a,_start,__libc_start_main,main,MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 0.31%  , 0.01%  , 2          ,a.clang.out,[kernel.kallsyms],[k] el0_da
+ 0.30%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_mem_abort
+ 0.30%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_translation_fault
+ 0.30%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_page_fault
+ 0.30%  , 0.01%  , 1          ,a.clang.out,[kernel.kallsyms],[k] __handle_mm_fault
+ 0.30%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] handle_mm_fault
+ 0.29%  , 0.01%  , 3          ,a.clang.out,[kernel.kallsyms],[k] do_anonymous_page
+ 0.24%  , 0.24%  , 54         ,a.clang.out,a.clang.out      ,[.] LBM_initializeSpecialCellsForChannel
+ 0.17%  , 0.17%  , 38         ,a.clang.out,[kernel.kallsyms],[k] clear_page
+ 0.09%  , 0.07%  , 15         ,a.clang.out,[kernel.kallsyms],[k] do_notify_resume
+ 0.09%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] work_pending
+ 0.07%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] alloc_pages_vma
+ 0.07%  , 0.07%  , 14         ,a.clang.out,[kernel.kallsyms],[k] get_page_from_freelist
+ 0.07%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] __alloc_pages_nodemask
+ 0.06%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] __sys_trace_return
+ 0.05%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] __GI___munmap
+ 0.05%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] sys_munmap
+ 0.05%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] vm_munmap
+ 0.05%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_munmap
+ 0.05%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] unmap_region
+ 0.04%  , 0.01%  , 2          ,a.clang.out,[kernel.kallsyms],[k] release_pages
+ 0.04%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] tlb_finish_mmu
+ 0.04%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] arch_tlb_finish_mmu
+ 0.04%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] tlb_flush_mmu_free
+ 0.04%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] free_pages_and_swap_cache
+ 0.04%  , 0.04%  , 8          ,a.clang.out,[kernel.kallsyms],[k] free_hot_cold_page
+ 0.04%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] free_hot_cold_page_list
+ 0.02%  , 0.02%  , 4          ,a.clang.out,[kernel.kallsyms],[k] change_protection_range
+ 0.02%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] task_work_run
+ 0.02%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] task_numa_work
+ 0.02%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] change_prot_numa
+ 0.02%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] change_protection
+ 0.01%  , 0.01%  , 3          ,a.clang.out,[kernel.kallsyms],[k] __lru_cache_add
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] lru_cache_add_active_or_unevictable
+ 0.01%  , 0.01%  , 1          ,a.clang.out,a.clang.out      ,[.] fgetc@plt
+ 0.01%  , 0.01%  , 2          ,a.clang.out,[kernel.kallsyms],[k] __arch_copy_to_user
+ 0.01%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] __uflow
+ 0.01%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] _IO_default_uflow
+ 0.01%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] __read_nocancel
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] sys_read
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] vfs_read
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] __vfs_read
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff0000014a7b5c
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] generic_file_read_iter
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] generic_file_buffered_read
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] copy_page_to_iter
+ 0.01%  , 0.01%  , 2          ,a.clang.out,[kernel.kallsyms],[k] mem_cgroup_commit_charge
+ 0.01%  , 0.01%  , 2          ,a.clang.out,[kernel.kallsyms],[k] mem_cgroup_try_charge
+ 0.01%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] zap_pte_range
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] unmap_vmas
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] unmap_single_vma
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] unmap_page_range
+ 0.00%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] down_read_trylock
+ 0.00%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] context_tracking_user_exit
+ 0.00%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] page_remove_rmap
+ 0.00%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] __get_vma_policy
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] get_vma_policy
+ 0.00%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] el0_svc_naked
+ 0.00%  , 0.00%  , 0          ,a.clang.out,ld-2.17.so       ,[.] _start
+ 0.00%  , 0.00%  , 0          ,a.clang.out,ld-2.17.so       ,[.] _dl_start
+ 0.00%  , 0.00%  , 0          ,a.clang.out,ld-2.17.so       ,[.] _dl_start_final
+ 0.00%  , 0.00%  , 0          ,a.clang.out,ld-2.17.so       ,[.] brk
+ 0.00%  , 0.00%  , 0          ,perf       ,[unknown]        ,[k] 0x000040001c94ad48
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] __sys_trace_return
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] sys_execve
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] do_execve
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] do_execveat_common
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] search_binary_handler
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] load_elf_binary
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] setup_new_exec
+ 0.00%  , 0.00%  , 1          ,perf       ,[kernel.kallsyms],[k] perf_iterate_ctx
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] __set_task_comm
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] perf_event_comm
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] perf_iterate_sb
+ 0.00%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] __fopen_internal
+ 0.00%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] _IO_file_fopen@@GLIBC_2.17
+ 0.00%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] _IO_file_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] __GI___libc_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] sys_openat
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_sys_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_filp_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] path_openat
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_last
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] vfs_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_dentry_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003ca55bc
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003c8edc4
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003c8e98c
+ 0.00%  , 0.00%  , 1          ,a.clang.out,[nfsv4]          ,[k] nfs_release_seqid
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003c8e448
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003c893f4
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003ca3618
+ 0.00%  , 0.00%  , 6          ,perf       ,[kernel.kallsyms],[k] perf_event_exec
+ 0.00%  , 0.00%  , 6          ,a.clang.out,[kernel.kallsyms],[k] finish_task_switch
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003c8e3e4
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003c82848
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000002a40e00
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] out_of_line_wait_on_bit
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] __wait_on_bit
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000002a40e44
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] schedule
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] __sched_text_start
+
+
+# Samples: 22K of event 'instructions'
+# Event count (approx.): 33304309205
+#
+# Children,    Self,     Samples,Command    ,Shared Object    ,Symbol                                  
+ 98.43% , 0.00%  , 0          ,a.clang.out,[unknown]        ,[.] 0x0000ffffd91df09a
+20350 0xffffd91df09a,_start,__libc_start_main,LBM_performStreamCollideTRT
+396 0xffffd91df09a,_start,__libc_start_main,main,MAIN_finalize,LBM_showGridStatistics
+392 0xffffd91df09a,_start,__libc_start_main,main,MAIN_initialize,LBM_showGridStatistics
+305 0xffffd91df09a,_start,__libc_start_main,main,LBM_initializeGrid
+230 0xffffd91df09a,_start,__libc_start_main,main,MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 98.43% , 0.00%  , 0          ,a.clang.out,a.clang.out      ,[.] _start
+20350 _start,__libc_start_main,LBM_performStreamCollideTRT
+396 _start,__libc_start_main,main,MAIN_finalize,LBM_showGridStatistics
+392 _start,__libc_start_main,main,MAIN_initialize,LBM_showGridStatistics
+305 _start,__libc_start_main,main,LBM_initializeGrid
+230 _start,__libc_start_main,main,MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 98.43% , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] __libc_start_main
+20350 __libc_start_main,LBM_performStreamCollideTRT
+396 __libc_start_main,main,MAIN_finalize,LBM_showGridStatistics
+392 __libc_start_main,main,MAIN_initialize,LBM_showGridStatistics
+305 __libc_start_main,main,LBM_initializeGrid
+230 __libc_start_main,main,MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 92.67% , 92.65% , 20350      ,a.clang.out,a.clang.out      ,[.] LBM_performStreamCollideTRT
+20350 0xffffd91df09a,_start,__libc_start_main,LBM_performStreamCollideTRT
+ 5.75%  , 0.00%  , 0          ,a.clang.out,a.clang.out      ,[.] main
+396 main,MAIN_finalize,LBM_showGridStatistics
+392 main,MAIN_initialize,LBM_showGridStatistics
+305 main,LBM_initializeGrid
+230 main,MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 3.23%  , 3.23%  , 788        ,a.clang.out,a.clang.out      ,[.] LBM_showGridStatistics
+396 0xffffd91df09a,_start,__libc_start_main,main,MAIN_finalize,LBM_showGridStatistics
+392 0xffffd91df09a,_start,__libc_start_main,main,MAIN_initialize,LBM_showGridStatistics
+ 2.28%  , 0.00%  , 0          ,a.clang.out,a.clang.out      ,[.] MAIN_initialize
+392 MAIN_initialize,LBM_showGridStatistics
+230 MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 1.65%  , 0.00%  , 0          ,a.clang.out,a.clang.out      ,[.] MAIN_finalize
+396 MAIN_finalize,LBM_showGridStatistics
+ 1.63%  , 1.50%  , 305        ,a.clang.out,a.clang.out      ,[.] LBM_initializeGrid
+305 0xffffd91df09a,_start,__libc_start_main,main,LBM_initializeGrid
+ 1.57%  , 1.57%  , 410        ,a.clang.out,a.clang.out      ,[.] LBM_handleInOutFlow
+410 LBM_handleInOutFlow
+ 0.65%  , 0.15%  , 68         ,a.clang.out,a.clang.out      ,[.] LBM_loadObstacleFile
+230 LBM_loadObstacleFile,_IO_getc
+ 0.51%  , 0.51%  , 232        ,a.clang.out,libc-2.17.so     ,[.] _IO_getc
+230 0xffffd91df09a,_start,__libc_start_main,main,MAIN_initialize,LBM_loadObstacleFile,_IO_getc
+ 0.20%  , 0.20%  , 57         ,a.clang.out,a.clang.out      ,[.] LBM_initializeSpecialCellsForChannel
+ 0.13%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] el0_da
+ 0.13%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_mem_abort
+ 0.13%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_translation_fault
+ 0.13%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_page_fault
+ 0.13%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] handle_mm_fault
+ 0.13%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] __handle_mm_fault
+ 0.13%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] do_anonymous_page
+ 0.10%  , 0.10%  , 20         ,a.clang.out,[kernel.kallsyms],[k] clear_page
+ 0.03%  , 0.02%  , 5          ,a.clang.out,[kernel.kallsyms],[k] do_notify_resume
+ 0.03%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] work_pending
+ 0.03%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] __sys_trace_return
+ 0.03%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] __GI___munmap
+ 0.03%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] sys_munmap
+ 0.03%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] vm_munmap
+ 0.03%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_munmap
+ 0.03%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] unmap_region
+ 0.02%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] free_pages_and_swap_cache
+ 0.02%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] tlb_finish_mmu
+ 0.02%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] arch_tlb_finish_mmu
+ 0.02%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] tlb_flush_mmu_free
+ 0.02%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] lru_cache_add_active_or_unevictable
+ 0.02%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] release_pages
+ 0.01%  , 0.01%  , 2          ,a.clang.out,[kernel.kallsyms],[k] __lru_cache_add
+ 0.01%  , 0.01%  , 4          ,a.clang.out,[kernel.kallsyms],[k] free_hot_cold_page
+ 0.01%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] free_hot_cold_page_list
+ 0.01%  , 0.01%  , 3          ,a.clang.out,a.clang.out      ,[.] fgetc@plt
+ 0.00%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] pagevec_lru_move_fn
+ 0.00%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] get_page_from_freelist
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] alloc_pages_vma
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] __alloc_pages_nodemask
+ 0.00%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] change_protection_range
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] task_work_run
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] task_numa_work
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] change_prot_numa
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] change_protection
+ 0.00%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] __dec_node_page_state
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] unmap_vmas
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] unmap_single_vma
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] unmap_page_range
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] zap_pte_range
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] page_remove_rmap
+ 0.00%  , 0.00%  , 1          ,a.clang.out,[kernel.kallsyms],[k] copy_page
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0x000040001c94ad48
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] sys_execve
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_execve
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_execveat_common
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] search_binary_handler
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] load_elf_binary
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] __arch_clear_user
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] el1_ia
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_fault
+ 0.00%  , 0.00%  , 6          ,perf       ,[kernel.kallsyms],[k] perf_event_exec
+ 0.00%  , 0.00%  , 0          ,perf       ,[unknown]        ,[k] 0x000040001c94ad48
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] __sys_trace_return
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] sys_execve
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] do_execve
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] do_execveat_common
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] search_binary_handler
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] load_elf_binary
+ 0.00%  , 0.00%  , 0          ,perf       ,[kernel.kallsyms],[k] setup_new_exec
+ 0.00%  , 0.00%  , 6          ,a.clang.out,[kernel.kallsyms],[k] finish_task_switch
+ 0.00%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] __fopen_internal
+ 0.00%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] _IO_file_fopen@@GLIBC_2.17
+ 0.00%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] _IO_file_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,libc-2.17.so     ,[.] __GI___libc_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] sys_openat
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_sys_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_filp_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] path_openat
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_last
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] vfs_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] do_dentry_open
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003ca55bc
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003c8edc4
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003c8e98c
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003c8e3e4
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000003c82848
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000002a40e00
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] out_of_line_wait_on_bit
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] __wait_on_bit
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[unknown]        ,[k] 0xffff000002a40e44
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] schedule
+ 0.00%  , 0.00%  , 0          ,a.clang.out,[kernel.kallsyms],[k] __sched_text_start
+
+
+#
+# (Tip: Show individual samples with: perf script)
+#

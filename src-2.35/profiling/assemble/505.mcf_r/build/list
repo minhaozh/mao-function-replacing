@@ -1,0 +1,6 @@
+build_base_gcc-aarch64-mao-gta-64.0000 dir=/GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/build/build_base_gcc-aarch64-mao-gta-64.0000 label=gcc-aarch64-mao-gta-64 lock=0 tune=base type=build username=nsccgz_yfdu_16
+build_base_gcc-aarch64-withoutmao-gta-64.0000 dir=/GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/build/build_base_gcc-aarch64-withoutmao-gta-64.0000 label=gcc-aarch64-withoutmao-gta-64 lock=0 tune=base type=build username=nsccgz_yfdu_16
+build_base_kunpeng-64.0000 dir=/GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/build/build_base_kunpeng-64.0000 label=kunpeng-64 lock=0 tune=base type=build username=nsccgz_yfdu_16
+build_peak_gcc-aarch64-mao-gta-64.0000 dir=/GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/build/build_peak_gcc-aarch64-mao-gta-64.0000 label=gcc-aarch64-mao-gta-64 lock=0 tune=peak type=build username=nsccgz_yfdu_16
+build_peak_gcc-aarch64-withoutmao-gta-64.0000 dir=/GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/build/build_peak_gcc-aarch64-withoutmao-gta-64.0000 label=gcc-aarch64-withoutmao-gta-64 lock=0 tune=peak type=build username=nsccgz_yfdu_16
+__END__

@@ -1,0 +1,11 @@
+.idea
+/binutils-2.22-obj-x86_64-linux
+/binutils-2.35-obj-aarch64-none-linux
+/binutils-2.35-obj-x86_64-linux
+/cmake-build-debug
+/**/cmake-build-debug
+/debug-genOpcodes
+/obj-aarch64-none-linux
+a.out.*
+.vscode
+bin/*

@@ -1,0 +1,501 @@
+diff -urpN binutils-2.35.orig/gas/config/tc-i386.c binutils-2.35/gas/config/tc-i386.c
+--- binutils-2.35.orig/gas/config/tc-i386.c	2020-07-24 17:12:19.000000000 +0800
++++ binutils-2.35/gas/config/tc-i386.c	2020-11-03 20:26:47.428545000 +0800
+@@ -60,21 +60,6 @@
+ #endif
+ #endif
+ 
+-/* Prefixes will be emitted in the order defined below.
+-   WAIT_PREFIX must be the first prefix since FWAIT is really is an
+-   instruction, and so must come before any prefixes.
+-   The preferred prefix order is SEG_PREFIX, ADDR_PREFIX, DATA_PREFIX,
+-   REP_PREFIX/HLE_PREFIX, LOCK_PREFIX.  */
+-#define WAIT_PREFIX	0
+-#define SEG_PREFIX	1
+-#define ADDR_PREFIX	2
+-#define DATA_PREFIX	3
+-#define REP_PREFIX	4
+-#define HLE_PREFIX	REP_PREFIX
+-#define BND_PREFIX	REP_PREFIX
+-#define LOCK_PREFIX	5
+-#define REX_PREFIX	6       /* must come last.  */
+-#define MAX_PREFIXES	7	/* max prefixes per opcode */
+ 
+ /* we define the syntax here (modulo base,index,scale syntax) */
+ #define REGISTER_PREFIX '%'
+@@ -111,26 +96,6 @@ typedef struct
+ }
+ templates;
+ 
+-/* 386 operand encoding bytes:  see 386 book for details of this.  */
+-typedef struct
+-{
+-  unsigned int regmem;	/* codes register or memory operand */
+-  unsigned int reg;	/* codes register operand (or extended opcode) */
+-  unsigned int mode;	/* how to interpret regmem & reg */
+-}
+-modrm_byte;
+-
+-/* x86-64 extension prefix.  */
+-typedef int rex_byte;
+-
+-/* 386 opcode byte to code indirect addressing.  */
+-typedef struct
+-{
+-  unsigned base;
+-  unsigned index;
+-  unsigned scale;
+-}
+-sib_byte;
+ 
+ /* x86 arch names, types and features */
+ typedef struct
+@@ -259,192 +224,6 @@ struct Broadcast_Operation
+ 
+ static struct Broadcast_Operation broadcast_op;
+ 
+-/* VEX prefix.  */
+-typedef struct
+-{
+-  /* VEX prefix is either 2 byte or 3 byte.  EVEX is 4 byte.  */
+-  unsigned char bytes[4];
+-  unsigned int length;
+-  /* Destination or source register specifier.  */
+-  const reg_entry *register_specifier;
+-} vex_prefix;
+-
+-/* 'md_assemble ()' gathers together information and puts it into a
+-   i386_insn.  */
+-
+-union i386_op
+-  {
+-    expressionS *disps;
+-    expressionS *imms;
+-    const reg_entry *regs;
+-  };
+-
+-enum i386_error
+-  {
+-    operand_size_mismatch,
+-    operand_type_mismatch,
+-    register_type_mismatch,
+-    number_of_operands_mismatch,
+-    invalid_instruction_suffix,
+-    bad_imm4,
+-    unsupported_with_intel_mnemonic,
+-    unsupported_syntax,
+-    unsupported,
+-    invalid_vsib_address,
+-    invalid_vector_register_set,
+-    unsupported_vector_index_register,
+-    unsupported_broadcast,
+-    broadcast_needed,
+-    unsupported_masking,
+-    mask_not_on_destination,
+-    no_default_mask,
+-    unsupported_rc_sae,
+-    rc_sae_operand_not_last_imm,
+-    invalid_register_operand,
+-  };
+-
+-struct _i386_insn
+-  {
+-    /* TM holds the template for the insn were currently assembling.  */
+-    insn_template tm;
+-
+-    /* SUFFIX holds the instruction size suffix for byte, word, dword
+-       or qword, if given.  */
+-    char suffix;
+-
+-    /* OPERANDS gives the number of given operands.  */
+-    unsigned int operands;
+-
+-    /* REG_OPERANDS, DISP_OPERANDS, MEM_OPERANDS, IMM_OPERANDS give the number
+-       of given register, displacement, memory operands and immediate
+-       operands.  */
+-    unsigned int reg_operands, disp_operands, mem_operands, imm_operands;
+-
+-    /* TYPES [i] is the type (see above #defines) which tells us how to
+-       use OP[i] for the corresponding operand.  */
+-    i386_operand_type types[MAX_OPERANDS];
+-
+-    /* Displacement expression, immediate expression, or register for each
+-       operand.  */
+-    union i386_op op[MAX_OPERANDS];
+-
+-    /* Flags for operands.  */
+-    unsigned int flags[MAX_OPERANDS];
+-#define Operand_PCrel 1
+-#define Operand_Mem   2
+-
+-    /* Relocation type for operand */
+-    enum bfd_reloc_code_real reloc[MAX_OPERANDS];
+-
+-    /* BASE_REG, INDEX_REG, and LOG2_SCALE_FACTOR are used to encode
+-       the base index byte below.  */
+-    const reg_entry *base_reg;
+-    const reg_entry *index_reg;
+-    unsigned int log2_scale_factor;
+-
+-    /* SEG gives the seg_entries of this insn.  They are zero unless
+-       explicit segment overrides are given.  */
+-    const seg_entry *seg[2];
+-
+-    /* Copied first memory operand string, for re-checking.  */
+-    char *memop1_string;
+-
+-    /* PREFIX holds all the given prefix opcodes (usually null).
+-       PREFIXES is the number of prefix opcodes.  */
+-    unsigned int prefixes;
+-    unsigned char prefix[MAX_PREFIXES];
+-
+-    /* Register is in low 3 bits of opcode.  */
+-    bfd_boolean short_form;
+-
+-    /* The operand to a branch insn indicates an absolute branch.  */
+-    bfd_boolean jumpabsolute;
+-
+-    /* Has MMX register operands.  */
+-    bfd_boolean has_regmmx;
+-
+-    /* Has XMM register operands.  */
+-    bfd_boolean has_regxmm;
+-
+-    /* Has YMM register operands.  */
+-    bfd_boolean has_regymm;
+-
+-    /* Has ZMM register operands.  */
+-    bfd_boolean has_regzmm;
+-
+-    /* Has GOTPC or TLS relocation.  */
+-    bfd_boolean has_gotpc_tls_reloc;
+-
+-    /* RM and SIB are the modrm byte and the sib byte where the
+-       addressing modes of this insn are encoded.  */
+-    modrm_byte rm;
+-    rex_byte rex;
+-    rex_byte vrex;
+-    sib_byte sib;
+-    vex_prefix vex;
+-
+-    /* Masking attributes.  */
+-    struct Mask_Operation *mask;
+-
+-    /* Rounding control and SAE attributes.  */
+-    struct RC_Operation *rounding;
+-
+-    /* Broadcasting attributes.  */
+-    struct Broadcast_Operation *broadcast;
+-
+-    /* Compressed disp8*N attribute.  */
+-    unsigned int memshift;
+-
+-    /* Prefer load or store in encoding.  */
+-    enum
+-      {
+-	dir_encoding_default = 0,
+-	dir_encoding_load,
+-	dir_encoding_store,
+-	dir_encoding_swap
+-      } dir_encoding;
+-
+-    /* Prefer 8bit or 32bit displacement in encoding.  */
+-    enum
+-      {
+-	disp_encoding_default = 0,
+-	disp_encoding_8bit,
+-	disp_encoding_32bit
+-      } disp_encoding;
+-
+-    /* Prefer the REX byte in encoding.  */
+-    bfd_boolean rex_encoding;
+-
+-    /* Disable instruction size optimization.  */
+-    bfd_boolean no_optimize;
+-
+-    /* How to encode vector instructions.  */
+-    enum
+-      {
+-	vex_encoding_default = 0,
+-	vex_encoding_vex,
+-	vex_encoding_vex3,
+-	vex_encoding_evex,
+-	vex_encoding_error
+-      } vec_encoding;
+-
+-    /* REP prefix.  */
+-    const char *rep_prefix;
+-
+-    /* HLE prefix.  */
+-    const char *hle_prefix;
+-
+-    /* Have BND prefix.  */
+-    const char *bnd_prefix;
+-
+-    /* Have NOTRACK prefix.  */
+-    const char *notrack_prefix;
+-
+-    /* Error message.  */
+-    enum i386_error error;
+-  };
+-
+-typedef struct _i386_insn i386_insn;
+ 
+ /* Link RC type with corresponding string, that'll be looked for in
+    asm.  */
+@@ -557,13 +336,6 @@ static expressionS im_expressions[MAX_IM
+ /* Current operand we are working on.  */
+ static int this_operand = -1;
+ 
+-/* We support four different modes.  FLAG_CODE variable is used to distinguish
+-   these.  */
+-
+-enum flag_code {
+-	CODE_32BIT,
+-	CODE_16BIT,
+-	CODE_64BIT };
+ 
+ static enum flag_code flag_code;
+ static unsigned int object_64bit;
+diff -urpN binutils-2.35.orig/gas/config/tc-i386.h binutils-2.35/gas/config/tc-i386.h
+--- binutils-2.35.orig/gas/config/tc-i386.h	2020-07-24 17:12:19.000000000 +0800
++++ binutils-2.35/gas/config/tc-i386.h	2020-11-03 20:32:01.959399000 +0800
+@@ -373,6 +373,238 @@ void tc_pe_dwarf2_emit_offset (symbolS *
+ 
+ #endif /* TE_PE */
+ 
++/* Prefixes will be emitted in the order defined below.
++   WAIT_PREFIX must be the first prefix since FWAIT is really is an
++   instruction, and so must come before any prefixes.
++   The preferred prefix order is SEG_PREFIX, ADDR_PREFIX, DATA_PREFIX,
++   REP_PREFIX/HLE_PREFIX, LOCK_PREFIX.  */
++#define WAIT_PREFIX	0
++#define SEG_PREFIX	1
++#define ADDR_PREFIX	2
++#define DATA_PREFIX	3
++#define REP_PREFIX	4
++#define HLE_PREFIX	REP_PREFIX
++#define BND_PREFIX	REP_PREFIX
++#define LOCK_PREFIX	5
++#define REX_PREFIX	6       /* must come last.  */
++#define MAX_PREFIXES	7	/* max prefixes per opcode */
++
++/* 386 operand encoding bytes:  see 386 book for details of this.  */
++typedef struct
++{
++  unsigned int regmem;	/* codes register or memory operand */
++  unsigned int reg;	/* codes register operand (or extended opcode) */
++  unsigned int mode;	/* how to interpret regmem & reg */
++}
++modrm_byte;
++
++/* x86-64 extension prefix.  */
++typedef int rex_byte;
++
++/* 386 opcode byte to code indirect addressing.  */
++typedef struct
++{
++  unsigned base;
++  unsigned index;
++  unsigned scale;
++}
++sib_byte;
++
++/* VEX prefix.  */
++typedef struct
++{
++  /* VEX prefix is either 2 byte or 3 byte.  EVEX is 4 byte.  */
++  unsigned char bytes[4];
++  unsigned int length;
++  /* Destination or source register specifier.  */
++  const reg_entry *register_specifier;
++} vex_prefix;
++
++/* 'md_assemble ()' gathers together information and puts it into a
++   i386_insn.  */
++
++union i386_op
++  {
++    expressionS *disps;
++    expressionS *imms;
++    const reg_entry *regs;
++  };
++
++enum i386_error
++  {
++    operand_size_mismatch,
++    operand_type_mismatch,
++    register_type_mismatch,
++    number_of_operands_mismatch,
++    invalid_instruction_suffix,
++    bad_imm4,
++    unsupported_with_intel_mnemonic,
++    unsupported_syntax,
++    unsupported,
++    invalid_vsib_address,
++    invalid_vector_register_set,
++    unsupported_vector_index_register,
++    unsupported_broadcast,
++    broadcast_needed,
++    unsupported_masking,
++    mask_not_on_destination,
++    no_default_mask,
++    unsupported_rc_sae,
++    rc_sae_operand_not_last_imm,
++    invalid_register_operand,
++  };
++
++struct _i386_insn
++  {
++    /* TM holds the template for the insn were currently assembling.  */
++    insn_template tm;
++
++    /* SUFFIX holds the instruction size suffix for byte, word, dword
++       or qword, if given.  */
++    char suffix;
++
++    /* OPERANDS gives the number of given operands.  */
++    unsigned int operands;
++
++    /* REG_OPERANDS, DISP_OPERANDS, MEM_OPERANDS, IMM_OPERANDS give the number
++       of given register, displacement, memory operands and immediate
++       operands.  */
++    unsigned int reg_operands, disp_operands, mem_operands, imm_operands;
++
++    /* TYPES [i] is the type (see above #defines) which tells us how to
++       use OP[i] for the corresponding operand.  */
++    i386_operand_type types[MAX_OPERANDS];
++
++    /* Displacement expression, immediate expression, or register for each
++       operand.  */
++    union i386_op op[MAX_OPERANDS];
++
++    /* Flags for operands.  */
++    unsigned int flags[MAX_OPERANDS];
++#define Operand_PCrel 1
++#define Operand_Mem   2
++
++    /* Relocation type for operand */
++    enum bfd_reloc_code_real reloc[MAX_OPERANDS];
++
++    /* BASE_REG, INDEX_REG, and LOG2_SCALE_FACTOR are used to encode
++       the base index byte below.  */
++    const reg_entry *base_reg;
++    const reg_entry *index_reg;
++    unsigned int log2_scale_factor;
++
++    /* SEG gives the seg_entries of this insn.  They are zero unless
++       explicit segment overrides are given.  */
++    const seg_entry *seg[2];
++
++    /* Copied first memory operand string, for re-checking.  */
++    char *memop1_string;
++
++    /* PREFIX holds all the given prefix opcodes (usually null).
++       PREFIXES is the number of prefix opcodes.  */
++    unsigned int prefixes;
++    unsigned char prefix[MAX_PREFIXES];
++
++    /* Register is in low 3 bits of opcode.  */
++    bfd_boolean short_form;
++
++    /* The operand to a branch insn indicates an absolute branch.  */
++    bfd_boolean jumpabsolute;
++
++    /* Has MMX register operands.  */
++    bfd_boolean has_regmmx;
++
++    /* Has XMM register operands.  */
++    bfd_boolean has_regxmm;
++
++    /* Has YMM register operands.  */
++    bfd_boolean has_regymm;
++
++    /* Has ZMM register operands.  */
++    bfd_boolean has_regzmm;
++
++    /* Has GOTPC or TLS relocation.  */
++    bfd_boolean has_gotpc_tls_reloc;
++
++    /* RM and SIB are the modrm byte and the sib byte where the
++       addressing modes of this insn are encoded.  */
++    modrm_byte rm;
++    rex_byte rex;
++    rex_byte vrex;
++    sib_byte sib;
++    vex_prefix vex;
++
++    /* Masking attributes.  */
++    struct Mask_Operation *mask;
++
++    /* Rounding control and SAE attributes.  */
++    struct RC_Operation *rounding;
++
++    /* Broadcasting attributes.  */
++    struct Broadcast_Operation *broadcast;
++
++    /* Compressed disp8*N attribute.  */
++    unsigned int memshift;
++
++    /* Prefer load or store in encoding.  */
++    enum
++      {
++	dir_encoding_default = 0,
++	dir_encoding_load,
++	dir_encoding_store,
++	dir_encoding_swap
++      } dir_encoding;
++
++    /* Prefer 8bit or 32bit displacement in encoding.  */
++    enum
++      {
++	disp_encoding_default = 0,
++	disp_encoding_8bit,
++	disp_encoding_32bit
++      } disp_encoding;
++
++    /* Prefer the REX byte in encoding.  */
++    bfd_boolean rex_encoding;
++
++    /* Disable instruction size optimization.  */
++    bfd_boolean no_optimize;
++
++    /* How to encode vector instructions.  */
++    enum
++      {
++	vex_encoding_default = 0,
++	vex_encoding_vex,
++	vex_encoding_vex3,
++	vex_encoding_evex,
++	vex_encoding_error
++      } vec_encoding;
++
++    /* REP prefix.  */
++    const char *rep_prefix;
++
++    /* HLE prefix.  */
++    const char *hle_prefix;
++
++    /* Have BND prefix.  */
++    const char *bnd_prefix;
++
++    /* Have NOTRACK prefix.  */
++    const char *notrack_prefix;
++
++    /* Error message.  */
++    enum i386_error error;
++  };
++
++typedef struct _i386_insn i386_insn;
++
++/* We support four different modes.  FLAG_CODE variable is used to distinguish
++   these.  */
++
++enum flag_code {
++	CODE_32BIT,
++	CODE_16BIT,
++	CODE_64BIT };
++
+ /* X_add_symbol:X_op_symbol (Intel mode only) */
+ #define O_full_ptr O_md2
+ 

@@ -1,0 +1,277 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 16K of event 'cpu-cycles'
+# Event count (approx.): 10544983458
+#
+# Children,    Self,     Samples,Command        ,Shared Object         ,Symbol                           
+ 100.00%, 0.00%  , 0          ,inverse_matrix.,[unknown]             ,[.] 0x0000ffffccfcf105
+4655 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4234 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2659 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1161 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant
+481 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+475 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+431 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+415 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+358 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant
+279 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+251 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+110 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+101 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant
+87 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant
+ 100.00%, 0.00%  , 0          ,inverse_matrix.,inverse_matrix.gcc.out,[.] _start
+4655 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4234 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2659 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1161 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant
+481 _start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+475 _start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+431 _start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+415 _start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+358 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant
+279 _start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+251 _start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+110 _start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+101 _start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant
+87 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant
+ 100.00%, 0.00%  , 0          ,inverse_matrix.,libc-2.17.so          ,[.] __libc_start_main
+4655 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4234 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2659 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1161 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant
+481 __libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+475 __libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+431 __libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+415 __libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+358 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant
+279 __libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+251 __libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+110 __libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+101 __libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant
+87 __libc_start_main,main,cofactor,determinant,determinant,determinant
+ 100.00%, 0.00%  , 0          ,inverse_matrix.,inverse_matrix.gcc.out,[.] main
+4655 main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4234 main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2659 main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1161 main,cofactor,determinant,determinant,determinant,determinant,determinant
+481 main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+475 main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+431 main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+415 main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+358 main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 main,cofactor,determinant,determinant,determinant,determinant
+279 main,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+251 main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+110 main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+101 main,determinant,determinant,determinant,determinant,determinant,determinant
+87 main,cofactor,determinant,determinant,determinant
+ 99.99% , 99.65% , 16195      ,inverse_matrix.,inverse_matrix.gcc.out,[.] determinant
+4655 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4234 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2659 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1161 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant
+481 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+475 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+431 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+415 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+358 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant
+279 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+251 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+110 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+101 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant
+87 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant
+ 91.62% , 0.00%  , 0          ,inverse_matrix.,inverse_matrix.gcc.out,[.] cofactor
+4655 cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4234 cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2659 cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1161 cofactor,determinant,determinant,determinant,determinant,determinant
+475 cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+431 cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+358 cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 cofactor,determinant,determinant,determinant,determinant
+251 cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+110 cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+87 cofactor,determinant,determinant,determinant
+ 8.32%  , 0.00%  , 0          ,inverse_matrix.,inverse_matrix.gcc.out,[.] transpose
+475 transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+431 transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+251 transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+110 transpose,determinant,determinant,determinant,determinant,determinant,determinant
+ 0.34%  , 0.34%  , 55         ,inverse_matrix.,[kernel.kallsyms]     ,[k] do_notify_resume
+ 0.34%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] work_pending
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] __sys_trace_return
+ 0.01%  , 0.01%  , 1          ,inverse_matrix.,[kernel.kallsyms]     ,[k] queue_work_on
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,libc-2.17.so          ,[.] putchar
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,libc-2.17.so          ,[.] __overflow
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,libc-2.17.so          ,[.] _IO_file_overflow@@GLIBC_2.17
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,libc-2.17.so          ,[.] _IO_do_write@@GLIBC_2.17
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,libc-2.17.so          ,[.] __write_nocancel
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] sys_write
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] vfs_write
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] __vfs_write
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] tty_write
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] n_tty_write
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] pty_write
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] tty_flip_buffer_push
+ 0.01%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] tty_schedule_flip
+ 0.00%  , 0.00%  , 1          ,inverse_matrix.,[kernel.kallsyms]     ,[k] __arch_clear_user
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[unknown]             ,[k] 0x000040000b63ad48
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] sys_execve
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] do_execve
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] do_execveat_common
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] search_binary_handler
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] load_elf_binary
+ 0.00%  , 0.00%  , 0          ,perf           ,[unknown]             ,[k] 0x000040000b63ad48
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] __sys_trace_return
+ 0.00%  , 0.00%  , 6          ,perf           ,[kernel.kallsyms]     ,[k] perf_event_exec
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] sys_execve
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] do_execve
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] do_execveat_common
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] search_binary_handler
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] load_elf_binary
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] setup_new_exec
+ 0.00%  , 0.00%  , 1          ,perf           ,[kernel.kallsyms]     ,[k] perf_event_addr_filters_exec
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] perf_iterate_ctx
+
+
+# Samples: 16K of event 'instructions'
+# Event count (approx.): 28771671293
+#
+# Children,    Self,     Samples,Command        ,Shared Object         ,Symbol                   
+ 100.00%, 0.00%  , 0          ,inverse_matrix.,[unknown]             ,[.] 0x0000ffffccfcf105
+4572 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4432 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2594 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1073 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant
+489 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+449 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+442 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+427 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+423 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant
+271 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+255 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+123 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+111 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant
+ 100.00%, 99.88% , 16240      ,inverse_matrix.,inverse_matrix.gcc.out,[.] determinant
+4572 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4432 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2594 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1073 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant
+489 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+449 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+442 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+427 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+423 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 0xffffccfcf105,_start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant
+271 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+255 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+123 0xffffccfcf105,_start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+111 0xffffccfcf105,_start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant
+ 100.00%, 0.00%  , 0          ,inverse_matrix.,inverse_matrix.gcc.out,[.] _start
+4572 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4432 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2594 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1073 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant
+489 _start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+449 _start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+442 _start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+427 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+423 _start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 _start,__libc_start_main,main,cofactor,determinant,determinant,determinant,determinant
+271 _start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+255 _start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+123 _start,__libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+111 _start,__libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant
+ 100.00%, 0.00%  , 0          ,inverse_matrix.,libc-2.17.so          ,[.] __libc_start_main
+4572 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4432 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2594 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1073 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant
+489 __libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+449 __libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+442 __libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+427 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+423 __libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 __libc_start_main,main,cofactor,determinant,determinant,determinant,determinant
+271 __libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+255 __libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+123 __libc_start_main,main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+111 __libc_start_main,main,determinant,determinant,determinant,determinant,determinant,determinant
+ 100.00%, 0.00%  , 0          ,inverse_matrix.,inverse_matrix.gcc.out,[.] main
+4572 main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4432 main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2594 main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1073 main,cofactor,determinant,determinant,determinant,determinant,determinant
+489 main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+449 main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+442 main,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+427 main,cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+423 main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 main,cofactor,determinant,determinant,determinant,determinant
+271 main,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+255 main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+123 main,cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+111 main,determinant,determinant,determinant,determinant,determinant,determinant
+ 91.67% , 0.00%  , 0          ,inverse_matrix.,inverse_matrix.gcc.out,[.] cofactor
+4572 cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+4432 cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+2594 cofactor,determinant,determinant,determinant,determinant,determinant,determinant
+1073 cofactor,determinant,determinant,determinant,determinant,determinant
+449 cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+427 cofactor,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+423 cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+311 cofactor,determinant,determinant,determinant,determinant
+255 cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+123 cofactor,transpose,determinant,determinant,determinant,determinant,determinant,determinant
+ 8.33%  , 0.00%  , 0          ,inverse_matrix.,inverse_matrix.gcc.out,[.] transpose
+449 transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+423 transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+255 transpose,determinant,determinant,determinant,determinant,determinant,determinant,determinant
+123 transpose,determinant,determinant,determinant,determinant,determinant,determinant
+ 0.12%  , 0.12%  , 19         ,inverse_matrix.,[kernel.kallsyms]     ,[k] do_notify_resume
+ 0.12%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] work_pending
+ 0.00%  , 0.00%  , 1          ,inverse_matrix.,ld-2.17.so            ,[.] open
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,ld-2.17.so            ,[.] _start
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,ld-2.17.so            ,[.] _dl_start
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,ld-2.17.so            ,[.] _dl_start_final
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,ld-2.17.so            ,[.] _dl_sysdep_start
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,ld-2.17.so            ,[.] dl_main
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,ld-2.17.so            ,[.] _dl_map_object_deps
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,ld-2.17.so            ,[.] _dl_catch_error
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,ld-2.17.so            ,[.] openaux
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,ld-2.17.so            ,[.] _dl_map_object
+ 0.00%  , 0.00%  , 1          ,inverse_matrix.,[kernel.kallsyms]     ,[k] perf_iterate_ctx
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[unknown]             ,[k] 0x000040000b63ad48
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] __sys_trace_return
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] sys_execve
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] do_execve
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] do_execveat_common
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] search_binary_handler
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] load_elf_binary
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] setup_arg_pages
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] expand_stack
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] expand_downwards
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] perf_event_mmap
+ 0.00%  , 0.00%  , 0          ,inverse_matrix.,[kernel.kallsyms]     ,[k] perf_iterate_sb
+ 0.00%  , 0.00%  , 6          ,perf           ,[kernel.kallsyms]     ,[k] perf_event_exec
+ 0.00%  , 0.00%  , 0          ,perf           ,[unknown]             ,[k] 0x000040000b63ad48
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] __sys_trace_return
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] sys_execve
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] do_execve
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] do_execveat_common
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] search_binary_handler
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] load_elf_binary
+ 0.00%  , 0.00%  , 0          ,perf           ,[kernel.kallsyms]     ,[k] setup_new_exec
+
+
+#
+# (Tip: Save output of perf stat using: perf stat record <target workload>)
+#

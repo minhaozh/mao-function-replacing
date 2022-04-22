@@ -1,0 +1,10 @@
+
+ CC_VERSION_OPTION:
+
+Using built-in specs.
+COLLECT_GCC=/usr/local/bin/gcc
+COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/9.2.0/lto-wrapper
+Target: aarch64-unknown-linux-gnu
+Configured with: ../configure --disable-multilib --enable-languages=c,c++,fortran --disable-static --enable-shared
+Thread model: posix
+gcc version 9.2.0 (GCC) 

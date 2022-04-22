@@ -1,0 +1,24 @@
+CC=gcc
+SRCS=$(wildcard *.cpp)
+OBJS=$(patsubst %.cpp, $(OBJDIR)/%.o, $(SRCS))
+TARGET=profiling
+OBJDIR=./build
+
+INCLUDE =
+LDFLAGS =
+LIBS    = -lstdc++
+CFLAGS  = $(INCLUDE) $(LDFLAGS)
+CXXFLAGS= $(CFLAGS)
+
+.PHONY: clean all
+all: $(TARGET)
+
+$(TARGET):$(OBJS)
+	$(CC) $(CXXFLAGS) -o $@ $^ $(LIBS)
+
+$(OBJDIR)/%.o:%.cpp
+	mkdir -p build
+	$(CC) -o $@ -c $<
+
+clean:
+	rm -rf $(TARGET) ./build

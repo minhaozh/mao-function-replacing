@@ -1,0 +1,361 @@
+specinvoke r4356
+ Invoked as: /GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/specinvoke -d /GPUFS/nsccgz_yfdu_16/gta/cpu2017/benchspec/CPU/505.mcf_r/run/run_base_refrate_kunpeng-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+timer ticks over every 1000 ns
+ Environment in effect for these runs:
+ # 1: SLURM_JOB_QOS=normal
+ # 2: LANG=en_US.UTF-8
+ # 3: SSH_CONNECTION=172.17.69.254 55320 172.16.20.220 22
+ # 4: LIBC_FATAL_STDERR_=1
+ # 5: XDG_SESSION_ID=120291
+ # 6: LC_LANG=C
+ # 7: LOGNAME=nsccgz_yfdu_16
+ # 8: SLURM_NNODES=1
+ # 9: LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+ #10: QT_GRAPHICSSYSTEM_CHECKED=1
+ #11: SLURM_SUBMIT_HOST=aln220
+ #12: SLURM_TASKS_PER_NODE=128
+ #13: MODULESHOME=/usr/share/Modules
+ #14: XDG_RUNTIME_DIR=/run/user/7778
+ #15: SLURMD_NODENAME=apn508
+ #16: SLURM_TASK_PID=16149
+ #17: SSH_TTY=/dev/pts/3
+ #18: HOME=/GPUFS/nsccgz_yfdu_16
+ #19: USER=nsccgz_yfdu_16
+ #20: SLURM_NTASKS=128
+ #21: SLURM_TOPOLOGY_ADDR_PATTERN=node
+ #22: HISTTIMEFORMAT=[%Y-%m-%d %H:%M:%S] [172.17.69.254] 
+ #23: SLURM_NPROCS=128
+ #24: LC_ALL=C
+ #25: MAIL=/var/spool/mail/nsccgz_yfdu_16
+ #26: OLD_PWD=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #27: http_proxy=http://172.16.20.3:3138
+ #28: SLURM_NODELIST=apn508
+ #29: HOSTNAME=apn508
+ #30: SLURM_JOB_NUM_NODES=1
+ #31: SLURM_WORKING_CLUSTER=tianhe2-t:aln220:6817:8704:102
+ #32: SLURM_JOB_NAME=gta
+ #33: QTLIB=/usr/lib64/qt-3.3/lib
+ #34: OMP_NUM_THREADS=1
+ #35: LD_LIBRARY_PATH=/usr/local/lib64/:/usr/local/lib/:/lib64::/GPUFS/nsccgz_yfdu_16/gta/jemalloc-5.2.1/lib
+ #36: ENVIRONMENT=BATCH
+ #37: LANGUAGE=en_US
+ #38: SPECPERLLIB=/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin/lib:/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin
+ #39: LSCOLORS=gxfxcxdxbxegedabagacad
+ #40: SLURM_TOPOLOGY_ADDR=apn508
+ #41: LAST_CMD= 1010  [2021-01-10 09:56:19] [172.17.69.254] vim kunpeng.sh 
+ #42: SLURM_CLUSTER_NAME=tianhe2-t
+ #43: SLURM_JOB_ACCOUNT=tianhe2t_test
+ #44: SLURM_PRIO_PROCESS=0
+ #45: SHLVL=2
+ #46: SPEC=/GPUFS/nsccgz_yfdu_16/gta/cpu2017
+ #47: CLICOLOR=1
+ #48: LOADEDMODULES=
+ #49: SLURM_GTIDS=0
+ #50: TMPDIR=/tmp
+ #51: PROMPT_COMMAND=
+if [ -z "$OLD_PWD" ];then 
+    export OLD_PWD=$PWD; 
+fi; 
+if [ ! -z "$LAST_CMD" ] && [ "$(history 1)" != "$LAST_CMD" ]; then 
+    logger -t `whoami`_shell_cmd "[$OLD_PWD]$(history 1)"; 
+fi; 
+export LAST_CMD="$(history 1)"; 
+export OLD_PWD=$PWD;
+ #52: OMPI_ALLOW_RUN_AS_ROOT=1
+ #53: SLURM_JOB_UID=7778
+ #54: SLURM_PROCID=0
+ #55: SLURM_NODE_ALIASES=(null)
+ #56: SLURM_JOB_USER=nsccgz_yfdu_16
+ #57: PATH=/GPUFS/nsccgz_yfdu_16/gta/cpu2017/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibutils/bin:/usr/share/Modules/bin:/usr/bin
+ #58: QTDIR=/usr/lib64/qt-3.3
+ #59: BASH_FUNC_module()=() {  eval `modulecmd bash $*`
+}
+ #60: HISTCONTROL=ignoredups
+ #61: LESSOPEN=||/usr/bin/lesspipe.sh %s
+ #62: SSH_CLIENT=172.17.69.254 55320 22
+ #63: MODULEPATH=/GPUFS/app_taishan/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/GPUFS/nsccgz_yfdu_16/fgn/sriov-test/modulefiles:/GPUFS/nsccgz_yfdu_16/fgn/modules
+ #64: ftp_proxy=ftp://172.16.20.3:3138
+ #65: SLURM_JOB_PARTITION=arm
+ #66: OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+ #67: HISTSIZE=1000
+ #68: SLURM_JOBID=4404
+ #69: PWD=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #70: SLURM_SUBMIT_DIR=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #71: SLURM_LOCALID=0
+ #72: XDG_DATA_DIRS=/GPUFS/nsccgz_yfdu_16/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+ #73: QTINC=/usr/lib64/qt-3.3/include
+ #74: SLURM_CPUS_ON_NODE=128
+ #75: https_proxy=https://172.16.20.3:3138
+ #76: SLURM_JOB_CPUS_PER_NODE=128
+ #77: TERM=xterm-256color
+ #78: SLURM_JOB_GID=7037
+ #79: SLURM_JOB_NODELIST=apn508
+ #80: SLURM_JOB_ID=4404
+ #81: SLURM_NODEID=0
+ #82: SHELL=/bin/bash
+ #83: SPECDB_PWD=/GPUFS/nsccgz_yfdu_16/gta/mao-spec-sbatch
+ #84: OMP_THREAD_LIMIT=1
+running commands in speccmds.cmd 1 times
+runs started at		1610258946, 642572000, Sun Jan 10 14:09:06 2021
+run 1 started at	1610258946, 642622000, Sun Jan 10 14:09:06 2021
+child started: 0,	1610258946, 642635000, pid=31828, 'taskset -c 0 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 1,	1610258946, 642743000, pid=31829, 'taskset -c 1 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 2,	1610258946, 642850000, pid=31830, 'taskset -c 2 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 3,	1610258946, 642957000, pid=31831, 'taskset -c 3 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 4,	1610258946, 643107000, pid=31832, 'taskset -c 4 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 5,	1610258946, 643218000, pid=31833, 'taskset -c 5 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 6,	1610258946, 643332000, pid=31834, 'taskset -c 6 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 7,	1610258946, 643448000, pid=31835, 'taskset -c 7 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 8,	1610258946, 643555000, pid=31836, 'taskset -c 8 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 9,	1610258946, 643674000, pid=31837, 'taskset -c 9 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 10,	1610258946, 643791000, pid=31838, 'taskset -c 10 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 11,	1610258946, 643933000, pid=31840, 'taskset -c 11 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 12,	1610258946, 644039000, pid=31842, 'taskset -c 12 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 13,	1610258946, 644160000, pid=31843, 'taskset -c 13 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 14,	1610258946, 644279000, pid=31846, 'taskset -c 14 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 15,	1610258946, 644402000, pid=31849, 'taskset -c 15 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 16,	1610258946, 644522000, pid=31850, 'taskset -c 16 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 17,	1610258946, 644636000, pid=31853, 'taskset -c 17 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 18,	1610258946, 644758000, pid=31854, 'taskset -c 18 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 19,	1610258946, 644872000, pid=31855, 'taskset -c 19 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 20,	1610258946, 644993000, pid=31857, 'taskset -c 20 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 21,	1610258946, 645140000, pid=31858, 'taskset -c 21 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 22,	1610258946, 645272000, pid=31861, 'taskset -c 22 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 23,	1610258946, 645405000, pid=31864, 'taskset -c 23 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 24,	1610258946, 645554000, pid=31865, 'taskset -c 24 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 25,	1610258946, 645679000, pid=31867, 'taskset -c 25 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 26,	1610258946, 645823000, pid=31870, 'taskset -c 26 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 27,	1610258946, 645993000, pid=31872, 'taskset -c 27 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 28,	1610258946, 646160000, pid=31875, 'taskset -c 28 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 29,	1610258946, 646316000, pid=31877, 'taskset -c 29 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 30,	1610258946, 646440000, pid=31879, 'taskset -c 30 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 31,	1610258946, 646580000, pid=31881, 'taskset -c 31 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 32,	1610258946, 646715000, pid=31882, 'taskset -c 32 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 33,	1610258946, 646837000, pid=31885, 'taskset -c 33 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 34,	1610258946, 646977000, pid=31886, 'taskset -c 34 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 35,	1610258946, 647097000, pid=31887, 'taskset -c 35 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 36,	1610258946, 647219000, pid=31888, 'taskset -c 36 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 37,	1610258946, 647327000, pid=31889, 'taskset -c 37 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 38,	1610258946, 647447000, pid=31892, 'taskset -c 38 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 39,	1610258946, 647576000, pid=31893, 'taskset -c 39 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 40,	1610258946, 647694000, pid=31894, 'taskset -c 40 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 41,	1610258946, 647814000, pid=31895, 'taskset -c 41 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 42,	1610258946, 647931000, pid=31896, 'taskset -c 42 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 43,	1610258946, 648060000, pid=31897, 'taskset -c 43 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 44,	1610258946, 648172000, pid=31902, 'taskset -c 44 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 45,	1610258946, 648302000, pid=31903, 'taskset -c 45 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 46,	1610258946, 648434000, pid=31905, 'taskset -c 46 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 47,	1610258946, 648552000, pid=31906, 'taskset -c 47 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 48,	1610258946, 648672000, pid=31908, 'taskset -c 48 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 49,	1610258946, 648794000, pid=31909, 'taskset -c 49 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 50,	1610258946, 648914000, pid=31912, 'taskset -c 50 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 51,	1610258946, 649039000, pid=31913, 'taskset -c 51 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 52,	1610258946, 649150000, pid=31915, 'taskset -c 52 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 53,	1610258946, 649284000, pid=31918, 'taskset -c 53 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 54,	1610258946, 649418000, pid=31919, 'taskset -c 54 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 55,	1610258946, 649531000, pid=31921, 'taskset -c 55 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 56,	1610258946, 649661000, pid=31923, 'taskset -c 56 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 57,	1610258946, 649786000, pid=31924, 'taskset -c 57 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 58,	1610258946, 649897000, pid=31928, 'taskset -c 58 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 59,	1610258946, 650009000, pid=31930, 'taskset -c 59 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 60,	1610258946, 650131000, pid=31932, 'taskset -c 60 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 61,	1610258946, 650261000, pid=31933, 'taskset -c 61 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 62,	1610258946, 650370000, pid=31934, 'taskset -c 62 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 63,	1610258946, 650487000, pid=31936, 'taskset -c 63 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 64,	1610258946, 650612000, pid=31938, 'taskset -c 64 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 65,	1610258946, 650722000, pid=31939, 'taskset -c 65 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 66,	1610258946, 650844000, pid=31941, 'taskset -c 66 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 67,	1610258946, 650967000, pid=31942, 'taskset -c 67 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 68,	1610258946, 651095000, pid=31945, 'taskset -c 68 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 69,	1610258946, 651223000, pid=31947, 'taskset -c 69 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 70,	1610258946, 651349000, pid=31951, 'taskset -c 70 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 71,	1610258946, 651523000, pid=31952, 'taskset -c 71 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 72,	1610258946, 651637000, pid=31953, 'taskset -c 72 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 73,	1610258946, 651760000, pid=31956, 'taskset -c 73 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 74,	1610258946, 651880000, pid=31959, 'taskset -c 74 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 75,	1610258946, 652016000, pid=31961, 'taskset -c 75 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 76,	1610258946, 652137000, pid=31963, 'taskset -c 76 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 77,	1610258946, 652253000, pid=31965, 'taskset -c 77 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 78,	1610258946, 652388000, pid=31966, 'taskset -c 78 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 79,	1610258946, 652517000, pid=31968, 'taskset -c 79 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 80,	1610258946, 652637000, pid=31970, 'taskset -c 80 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 81,	1610258946, 652761000, pid=31971, 'taskset -c 81 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 82,	1610258946, 652894000, pid=31976, 'taskset -c 82 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 83,	1610258946, 653012000, pid=31977, 'taskset -c 83 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 84,	1610258946, 653131000, pid=31980, 'taskset -c 84 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 85,	1610258946, 653294000, pid=31983, 'taskset -c 85 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 86,	1610258946, 653432000, pid=31987, 'taskset -c 86 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 87,	1610258946, 653562000, pid=31988, 'taskset -c 87 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 88,	1610258946, 653683000, pid=31990, 'taskset -c 88 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 89,	1610258946, 653815000, pid=31992, 'taskset -c 89 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 90,	1610258946, 653930000, pid=31993, 'taskset -c 90 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 91,	1610258946, 654076000, pid=31995, 'taskset -c 91 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 92,	1610258946, 654207000, pid=31998, 'taskset -c 92 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 93,	1610258946, 654343000, pid=32000, 'taskset -c 93 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 94,	1610258946, 654474000, pid=32001, 'taskset -c 94 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 95,	1610258946, 654601000, pid=32002, 'taskset -c 95 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 96,	1610258946, 654738000, pid=32005, 'taskset -c 96 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 97,	1610258946, 654860000, pid=32006, 'taskset -c 97 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 98,	1610258946, 654992000, pid=32007, 'taskset -c 98 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 99,	1610258946, 655151000, pid=32008, 'taskset -c 99 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 100,	1610258946, 655276000, pid=32009, 'taskset -c 100 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 101,	1610258946, 655393000, pid=32010, 'taskset -c 101 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 102,	1610258946, 655511000, pid=32011, 'taskset -c 102 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 103,	1610258946, 655639000, pid=32012, 'taskset -c 103 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 104,	1610258946, 655749000, pid=32013, 'taskset -c 104 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 105,	1610258946, 655873000, pid=32014, 'taskset -c 105 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 106,	1610258946, 655992000, pid=32015, 'taskset -c 106 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 107,	1610258946, 656108000, pid=32016, 'taskset -c 107 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 108,	1610258946, 656217000, pid=32017, 'taskset -c 108 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 109,	1610258946, 656332000, pid=32018, 'taskset -c 109 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 110,	1610258946, 656455000, pid=32019, 'taskset -c 110 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 111,	1610258946, 656578000, pid=32020, 'taskset -c 111 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 112,	1610258946, 656682000, pid=32021, 'taskset -c 112 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 113,	1610258946, 656807000, pid=32022, 'taskset -c 113 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 114,	1610258946, 656937000, pid=32023, 'taskset -c 114 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 115,	1610258946, 657063000, pid=32024, 'taskset -c 115 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 116,	1610258946, 657186000, pid=32025, 'taskset -c 116 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 117,	1610258946, 657313000, pid=32026, 'taskset -c 117 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 118,	1610258946, 657462000, pid=32027, 'taskset -c 118 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 119,	1610258946, 657673000, pid=32028, 'taskset -c 119 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 120,	1610258946, 657837000, pid=32031, 'taskset -c 120 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 121,	1610258946, 658051000, pid=32032, 'taskset -c 121 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 122,	1610258946, 658206000, pid=32033, 'taskset -c 122 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 123,	1610258946, 658368000, pid=32036, 'taskset -c 123 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 124,	1610258946, 658513000, pid=32039, 'taskset -c 124 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 125,	1610258946, 658673000, pid=32041, 'taskset -c 125 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 126,	1610258946, 658876000, pid=32045, 'taskset -c 126 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child started: 127,	1610258946, 659065000, pid=32048, 'taskset -c 127 ../run_base_refrate_kunpeng-64.0000/mcf_r_base.kunpeng-64 inp.in  > inp.out 2>> inp.err'
+child finished: 39,	1610260176, 550709000, sec=1229, nsec=903133000, pid=31893, rc=0
+child finished: 34,	1610260182, 722022000, sec=1236, nsec=75045000, pid=31886, rc=0
+child finished: 40,	1610260183, 475449000, sec=1236, nsec=827755000, pid=31894, rc=0
+child finished: 54,	1610260183, 567656000, sec=1236, nsec=918238000, pid=31919, rc=0
+child finished: 44,	1610260185, 972901000, sec=1239, nsec=324729000, pid=31902, rc=0
+child finished: 4,	1610260186, 361171000, sec=1239, nsec=718064000, pid=31832, rc=0
+child finished: 96,	1610260188, 381636000, sec=1241, nsec=726898000, pid=32005, rc=0
+child finished: 107,	1610260188, 448369000, sec=1241, nsec=792261000, pid=32016, rc=0
+child finished: 124,	1610260189, 838941000, sec=1243, nsec=180428000, pid=32039, rc=0
+child finished: 16,	1610260190, 733567000, sec=1244, nsec=89045000, pid=31850, rc=0
+child finished: 36,	1610260191, 074822000, sec=1244, nsec=427603000, pid=31888, rc=0
+child finished: 52,	1610260191, 266425000, sec=1244, nsec=617275000, pid=31915, rc=0
+child finished: 28,	1610260191, 478524000, sec=1244, nsec=832364000, pid=31875, rc=0
+child finished: 119,	1610260192, 483199000, sec=1245, nsec=825526000, pid=32028, rc=0
+child finished: 50,	1610260192, 679478000, sec=1246, nsec=30564000, pid=31912, rc=0
+child finished: 68,	1610260194, 174055000, sec=1247, nsec=522960000, pid=31945, rc=0
+child finished: 123,	1610260194, 222771000, sec=1247, nsec=564403000, pid=32036, rc=0
+child finished: 65,	1610260195, 399246000, sec=1248, nsec=748524000, pid=31939, rc=0
+child finished: 41,	1610260196, 480163000, sec=1249, nsec=832349000, pid=31895, rc=0
+child finished: 13,	1610260197, 124437000, sec=1250, nsec=480277000, pid=31843, rc=0
+child finished: 33,	1610260199, 419493000, sec=1252, nsec=772656000, pid=31885, rc=0
+child finished: 24,	1610260199, 772223000, sec=1253, nsec=126669000, pid=31865, rc=0
+child finished: 48,	1610260199, 911475000, sec=1253, nsec=262803000, pid=31908, rc=0
+child finished: 32,	1610260200, 035771000, sec=1253, nsec=389056000, pid=31882, rc=0
+child finished: 12,	1610260200, 084296000, sec=1253, nsec=440257000, pid=31842, rc=0
+child finished: 108,	1610260200, 365663000, sec=1253, nsec=709446000, pid=32017, rc=0
+child finished: 0,	1610260200, 497869000, sec=1253, nsec=855234000, pid=31828, rc=0
+child finished: 9,	1610260200, 558528000, sec=1253, nsec=914854000, pid=31837, rc=0
+child finished: 111,	1610260200, 787880000, sec=1254, nsec=131302000, pid=32020, rc=0
+child finished: 57,	1610260200, 791344000, sec=1254, nsec=141558000, pid=31924, rc=0
+child finished: 58,	1610260200, 797890000, sec=1254, nsec=147993000, pid=31928, rc=0
+child finished: 76,	1610260201, 442899000, sec=1254, nsec=790762000, pid=31963, rc=0
+child finished: 104,	1610260201, 546597000, sec=1254, nsec=890848000, pid=32013, rc=0
+child finished: 112,	1610260202, 143081000, sec=1255, nsec=486399000, pid=32021, rc=0
+child finished: 92,	1610260202, 325595000, sec=1255, nsec=671388000, pid=31998, rc=0
+child finished: 49,	1610260202, 393161000, sec=1255, nsec=744367000, pid=31909, rc=0
+child finished: 109,	1610260202, 661866000, sec=1256, nsec=5534000, pid=32018, rc=0
+child finished: 103,	1610260204, 126466000, sec=1257, nsec=470827000, pid=32012, rc=0
+child finished: 1,	1610260204, 240839000, sec=1257, nsec=598096000, pid=31829, rc=0
+child finished: 106,	1610260204, 602247000, sec=1257, nsec=946255000, pid=32015, rc=0
+child finished: 93,	1610260204, 860481000, sec=1258, nsec=206138000, pid=32000, rc=0
+child finished: 116,	1610260204, 903507000, sec=1258, nsec=246321000, pid=32025, rc=0
+child finished: 51,	1610260205, 614297000, sec=1258, nsec=965258000, pid=31913, rc=0
+child finished: 17,	1610260207, 855802000, sec=1261, nsec=211166000, pid=31853, rc=0
+child finished: 56,	1610260208, 925222000, sec=1262, nsec=275561000, pid=31923, rc=0
+child finished: 25,	1610260209, 147334000, sec=1262, nsec=501655000, pid=31867, rc=0
+child finished: 90,	1610260209, 650731000, sec=1262, nsec=996801000, pid=31993, rc=0
+child finished: 59,	1610260209, 744624000, sec=1263, nsec=94615000, pid=31930, rc=0
+child finished: 100,	1610260209, 932475000, sec=1263, nsec=277199000, pid=32009, rc=0
+child finished: 73,	1610260209, 944062000, sec=1263, nsec=292302000, pid=31956, rc=0
+child finished: 46,	1610260210, 022814000, sec=1263, nsec=374380000, pid=31905, rc=0
+child finished: 5,	1610260210, 197952000, sec=1263, nsec=554734000, pid=31833, rc=0
+child finished: 35,	1610260210, 617347000, sec=1263, nsec=970250000, pid=31887, rc=0
+child finished: 42,	1610260210, 632282000, sec=1263, nsec=984351000, pid=31896, rc=0
+child finished: 10,	1610260211, 088785000, sec=1264, nsec=444994000, pid=31838, rc=0
+child finished: 18,	1610260211, 428955000, sec=1264, nsec=784197000, pid=31854, rc=0
+child finished: 2,	1610260211, 684806000, sec=1265, nsec=41956000, pid=31830, rc=0
+child finished: 20,	1610260212, 133309000, sec=1265, nsec=488316000, pid=31857, rc=0
+child finished: 43,	1610260212, 195381000, sec=1265, nsec=547321000, pid=31897, rc=0
+child finished: 37,	1610260212, 721090000, sec=1266, nsec=73763000, pid=31889, rc=0
+child finished: 38,	1610260212, 747260000, sec=1266, nsec=99813000, pid=31892, rc=0
+child finished: 55,	1610260213, 246316000, sec=1266, nsec=596785000, pid=31921, rc=0
+child finished: 53,	1610260213, 261263000, sec=1266, nsec=611979000, pid=31918, rc=0
+child finished: 45,	1610260213, 474702000, sec=1266, nsec=826400000, pid=31903, rc=0
+child finished: 47,	1610260213, 625372000, sec=1266, nsec=976820000, pid=31906, rc=0
+child finished: 94,	1610260213, 889932000, sec=1267, nsec=235458000, pid=32001, rc=0
+child finished: 64,	1610260214, 089084000, sec=1267, nsec=438472000, pid=31938, rc=0
+child finished: 11,	1610260214, 400378000, sec=1267, nsec=756445000, pid=31840, rc=0
+child finished: 77,	1610260214, 410499000, sec=1267, nsec=758246000, pid=31965, rc=0
+child finished: 71,	1610260214, 427133000, sec=1267, nsec=775610000, pid=31952, rc=0
+child finished: 29,	1610260215, 251553000, sec=1268, nsec=605237000, pid=31877, rc=0
+child finished: 110,	1610260216, 825764000, sec=1270, nsec=169309000, pid=32019, rc=0
+child finished: 105,	1610260217, 156430000, sec=1270, nsec=500557000, pid=32014, rc=0
+child finished: 60,	1610260217, 903551000, sec=1271, nsec=253420000, pid=31932, rc=0
+child finished: 62,	1610260218, 002778000, sec=1271, nsec=352408000, pid=31934, rc=0
+child finished: 63,	1610260218, 016269000, sec=1271, nsec=365782000, pid=31936, rc=0
+child finished: 61,	1610260218, 029992000, sec=1271, nsec=379731000, pid=31933, rc=0
+child finished: 69,	1610260218, 042714000, sec=1271, nsec=391491000, pid=31947, rc=0
+child finished: 91,	1610260218, 184601000, sec=1271, nsec=530525000, pid=31995, rc=0
+child finished: 75,	1610260218, 273886000, sec=1271, nsec=621870000, pid=31961, rc=0
+child finished: 102,	1610260218, 555583000, sec=1271, nsec=900072000, pid=32011, rc=0
+child finished: 101,	1610260218, 583070000, sec=1271, nsec=927677000, pid=32010, rc=0
+child finished: 85,	1610260218, 590128000, sec=1271, nsec=936834000, pid=31983, rc=0
+child finished: 8,	1610260218, 951259000, sec=1272, nsec=307704000, pid=31836, rc=0
+child finished: 19,	1610260219, 357816000, sec=1272, nsec=712944000, pid=31855, rc=0
+child finished: 118,	1610260220, 097724000, sec=1273, nsec=440262000, pid=32027, rc=0
+child finished: 117,	1610260220, 101234000, sec=1273, nsec=443921000, pid=32026, rc=0
+child finished: 113,	1610260220, 604792000, sec=1273, nsec=947985000, pid=32022, rc=0
+child finished: 114,	1610260220, 957137000, sec=1274, nsec=300200000, pid=32023, rc=0
+child finished: 115,	1610260220, 994279000, sec=1274, nsec=337216000, pid=32024, rc=0
+child finished: 3,	1610260221, 300880000, sec=1274, nsec=657923000, pid=31831, rc=0
+child finished: 26,	1610260221, 394634000, sec=1274, nsec=748811000, pid=31870, rc=0
+child finished: 7,	1610260221, 572326000, sec=1274, nsec=928878000, pid=31835, rc=0
+child finished: 27,	1610260221, 805659000, sec=1275, nsec=159666000, pid=31872, rc=0
+child finished: 6,	1610260221, 859126000, sec=1275, nsec=215794000, pid=31834, rc=0
+child finished: 121,	1610260222, 056505000, sec=1275, nsec=398454000, pid=32032, rc=0
+child finished: 31,	1610260222, 092973000, sec=1275, nsec=446393000, pid=31881, rc=0
+child finished: 30,	1610260222, 186603000, sec=1275, nsec=540163000, pid=31879, rc=0
+child finished: 15,	1610260222, 189643000, sec=1275, nsec=545241000, pid=31849, rc=0
+child finished: 14,	1610260222, 217932000, sec=1275, nsec=573653000, pid=31846, rc=0
+child finished: 97,	1610260222, 864367000, sec=1276, nsec=209507000, pid=32006, rc=0
+child finished: 122,	1610260222, 901888000, sec=1276, nsec=243682000, pid=32033, rc=0
+child finished: 125,	1610260222, 938259000, sec=1276, nsec=279586000, pid=32041, rc=0
+child finished: 21,	1610260223, 075392000, sec=1276, nsec=430252000, pid=31858, rc=0
+child finished: 120,	1610260223, 396080000, sec=1276, nsec=738243000, pid=32031, rc=0
+child finished: 126,	1610260223, 725245000, sec=1277, nsec=66369000, pid=32045, rc=0
+child finished: 127,	1610260223, 891683000, sec=1277, nsec=232618000, pid=32048, rc=0
+child finished: 99,	1610260223, 991077000, sec=1277, nsec=335926000, pid=32008, rc=0
+child finished: 23,	1610260224, 007119000, sec=1277, nsec=361714000, pid=31864, rc=0
+child finished: 98,	1610260224, 022780000, sec=1277, nsec=367788000, pid=32007, rc=0
+child finished: 22,	1610260224, 056268000, sec=1277, nsec=410996000, pid=31861, rc=0
+child finished: 89,	1610260225, 525713000, sec=1278, nsec=871898000, pid=31992, rc=0
+child finished: 72,	1610260226, 383388000, sec=1279, nsec=731751000, pid=31953, rc=0
+child finished: 95,	1610260226, 852965000, sec=1280, nsec=198364000, pid=32002, rc=0
+child finished: 67,	1610260227, 187328000, sec=1280, nsec=536361000, pid=31942, rc=0
+child finished: 74,	1610260227, 407971000, sec=1280, nsec=756091000, pid=31959, rc=0
+child finished: 88,	1610260227, 646061000, sec=1280, nsec=992378000, pid=31990, rc=0
+child finished: 70,	1610260227, 906653000, sec=1281, nsec=255304000, pid=31951, rc=0
+child finished: 66,	1610260228, 102976000, sec=1281, nsec=452132000, pid=31941, rc=0
+child finished: 84,	1610260229, 044767000, sec=1282, nsec=391636000, pid=31980, rc=0
+child finished: 87,	1610260229, 572062000, sec=1282, nsec=918500000, pid=31988, rc=0
+child finished: 78,	1610260229, 883993000, sec=1283, nsec=231605000, pid=31966, rc=0
+child finished: 79,	1610260229, 975006000, sec=1283, nsec=322489000, pid=31968, rc=0
+child finished: 86,	1610260231, 245712000, sec=1284, nsec=592280000, pid=31987, rc=0
+child finished: 80,	1610260233, 209924000, sec=1286, nsec=557287000, pid=31970, rc=0
+child finished: 81,	1610260234, 034818000, sec=1287, nsec=382057000, pid=31971, rc=0
+child finished: 82,	1610260234, 302192000, sec=1287, nsec=649298000, pid=31976, rc=0
+child finished: 83,	1610260234, 356144000, sec=1287, nsec=703132000, pid=31977, rc=0
+run 1 finished at:	1610260234, 356150000, Sun Jan 10 14:30:34 2021
+run 1 elapsed time:	      1287, 713528000, 1287.713528000
+runs finished at	1610260234, 356183000, Sun Jan 10 14:30:34 2021
+runs elapsed time:	      1287, 713611000, 1287.713611000
+specinvoke exit: rc=0
